@@ -634,15 +634,15 @@ rect {
 	background-color: #f5f2d1;
 	z-index: 10;
 	overflow: hidden;
-	transform: translate(0px, -0vh);
+	transform: translate(0px, -5vh);
 	margin-top: -5%;
 }
 
 .ocean {
-	bottom: 30%;
+	bottom: 28%;
 	padding: 0;
 	z-index: 50;
-	transform: translate(0px, -5vh);
+	transform: translate(0px, -1vh);
 	overflow: hidden;
 	margin: 0.5%;
 	margin-left: -2%;
@@ -666,7 +666,6 @@ rect {
 	top: -2%;
 	fill: #f5f2d1;
 	opacity: 1;
-	height: 70vh;
 	z-index: 50;
 	background-color: transparent;
 }
@@ -676,11 +675,8 @@ rect {
 	animation-direction: reverse;
 	animation-duration: 10s;
 	fill: #7abcdb;
-	top: 26%;
+	top: 37%;
 	opacity: 1;
-	z-index: 50;
-	padding-top: 1%;
-	background-color: transparent;
 }
 
 .water__wave-front--fill {
@@ -689,7 +685,7 @@ rect {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 35%;
+	height: 34%;
 	z-index: 30;
 	background-color: transparent;
 }
@@ -718,19 +714,23 @@ rect {
 }
 
 .divSalmon {
-	width: 15%;
+	width: 10%;
 	justify-content: center;
 	margin-left: 5%;
 }
 
 .divSalmon3 {
 	z-index: 99960;
-	transform: translate(-2vh, -10vh);
+	transform: translate(-2vh, -6vh);
+	animation: wobble1;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 .divSalmon4 {
 	z-index: 99960;
-	transform: translate(2vh, -7vh);
+	transform: translate(2vh, -3vh);
 }
 
 @keyframes wobble {
@@ -740,6 +740,24 @@ rect {
 
 	66% {
 		transform: translateX(50px);
+	}
+}
+
+@keyframes wobble1 {
+	25% {
+		transform: translateX(15vh) translateY(-5%);
+	}
+
+	50% {
+		transform: translateX(40vh) translateY(20%);
+	}
+
+	75% {
+		transform: translateX(75vh) translateY(-15%);
+	}
+
+	100% {
+		transform: translateX(120vh) translateY(20%);
 	}
 }
 
@@ -766,5 +784,15 @@ rect {
 
 	100% {
 		transform: translateX(-30%);
+	}
+}
+
+@keyframes movingFishes {
+	0% {
+		transform: translateX(-15%), translateY(-15%);
+	}
+
+	100% {
+		transform: translateX(30%), translateY(30%);
 	}
 }
