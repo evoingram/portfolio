@@ -12,126 +12,185 @@
 
 <body>
     <div class="container">
+        <div class="sceneContainer" id="sceneContainer">
+            <div id="environment" class="environment">
+                <div class="sky" id="sky"></div>
+                <div class="ocean">
+                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                        <symbol viewBox="200 0 2744 175" id="water-waves" preserveAspectRatio="xMinYMin">
+                            <path d="M 50 50 Q 100 100 150 50 Q 200 100 250 50 Q 300 100 350 50 Q 400 100 450 50 Q 500 100 550 50 Q 600 100 650 50 Q 700 100 750 50 Q 800 100 850 50 Q 900 100 950 50 Q 1000 100 1050 50 Q 1100 100 1150 50 Q 1200 100 1250 50 Q 1300 100 1350 50 Q 1400 100 1450 50 Q 1500 100 1550 50 Q 1600 100 1650 50 Q 1700 100 1750 50 Q 1800 100 1850 50 
+                                Q 1900 100 1950 50 
+                                Q 2000 100 2050 50 
+                                Q 2100 100 2150 50 
+                                Q 2200 100 2250 50 
+                                Q 2300 100 2350 50 
+                                Q 2400 100 2450 50 
+                                Q 2500 100 2550 50 
+                                Q 2600 100 2650 50 
+                                Q 2700 100 2750 50 " />
 
-        <div id="bubbleContainer1" class="bubbleContainer">
-            <div id="bubbleContainer2" class="bubbleContainer">
-                <div id="bubbleMedium" class="bubble4"></div>
-                <div id="bubbleSmall1" class="bubble1"></div>
-                <div id="bubbleLarge" class="bubble2"></div>
-                <div id="bubbleSmall2" class="bubble3"></div>
+                        </symbol>
+                    </svg>
+                    <svg class="water__wave-back">
+                        <use xlink:href="#water-waves" />
+                    </svg>
+                    <div class="water__wave-back--fill"></div>
+                    <svg class="water__wave-front">
+                        <use xlink:href="#water-waves" />
+                    </svg>
+                    <div class="water__wave-front--fill"></div>
+
+                </div>
             </div>
+            <div class="beach" id="beach">
+            </div>
+
         </div>
-
-        <div id="salmon1" class="salmon1">
-            <div id="salmonTopHalfBackFin" class="topHalfBackFin"> </div>
-            <div id="salmonBottomHalfBackFin" class="bottomHalfBackFin"> </div>
-            <div id="salmonBody" class="body"> </div>
-            <div id="salmonTummy" class="tummy"> </div>
-            <div id="salmonTopFin" class="topFin"> </div>
-            <div id="salmonTopFace" class="topFace"> </div>
-            <div id="salmonBottomFace" class="bottomFace"> </div>
-            <div id="salmonBackFace" class="backFace"> </div>
-            <div id="salmonBottomLeftFin" class="bottomLeftFin"> </div>
-            <div id="salmonBottomRightFin" class="bottomRightFin"> </div>
-            <div id="salmonEye" class="eye"> </div>
-            <div id="salmonBodyLine" class="bodyLine"> </div>
-        </div>
-        <div id="salmon2" class="salmon2">
-            <div id="salmonTopHalfBackFin" class="topHalfBackFin"> </div>
-            <div id="salmonBottomHalfBackFin" class="bottomHalfBackFin"> </div>
-            <div id="salmonBody" class="body"> </div>
-            <div id="salmonTummy" class="tummy"> </div>
-            <div id="salmonTopFin" class="topFin"> </div>
-            <div id="salmonTopFace" class="topFace"> </div>
-            <div id="salmonBottomFace" class="bottomFace"> </div>
-            <div id="salmonBackFace" class="backFace"> </div>
-            <div id="salmonBottomLeftFin" class="bottomLeftFin"> </div>
-            <div id="salmonBottomRightFin" class="bottomRightFin"> </div>
-            <div id="salmonEye" class="eye"> </div>
-            <div id="salmonBodyLine" class="bodyLine"> </div>
-        </div>
-        <div id="rockbed">
-            <div id="rocks1" class="rocks">
-                <div id="rock1" class="rock"></div>
-                <div id="rock2" class="rock"></div>
-                <div id="rock6" class="rockSmall"></div>
-                <div id="rock7" class="rock"></div>
-                <div id="rock8" class="rock"></div>
-                <div id="rock11" class="rock"></div>
-                <div id="rock27" class="rockBase"></div>
-                <div id="rock28" class="rockBase"></div>
-            </div>
-            <div id="rocks7" class="rocks3">
-                <div id="rock4" class="rockSmall"></div>
-                <div id="rock3" class="rockSmall"></div>
-                <div id="rock5" class="rockSmall"></div>
-                <div id="rock9" class="rockSmall"></div>
-                <div id="rock10" class="rock"></div>
-            </div>
-            <div id="rocks2" class="rocks1">
-                <div id="rock1" class="rock"></div>
-                <div id="rock2" class="rock"></div>
-                <div id="rock6" class="rockSmall"></div>
-                <div id="rock7" class="rock"></div>
-                <div id="rock8" class="rock"></div>
-                <div id="rock11" class="rock"></div>
-            </div>
-            <div id="rocks3" class="rocks2">
-                <div id="rock12" class="rock"></div>
-                <div id="rock13" class="rock"></div>
-                <div id="rock14" class="rockSmall"></div>
-                <div id="rock15" class="rockSmall"></div>
-                <div id="rock16" class="rockSmall"></div>
-                <div id="rock17" class="rockSmall"></div>
-                <div id="rock18" class="rock"></div>
-            </div>
-            <div id="rocks4" class="rocks7">
-                <div id="rock19" class="rock"></div>
-                <div id="rock20" class="rock"></div>
-            </div>
-            <div id="rocks5" class="rocks4">
-                <div id="rock21" class="rock"></div>
-                <div id="rock22" class="rock"></div>
-                <div id="rock23" class="rockSmall"></div>
-                <div id="rock24" class="rockSmall"></div>
-                <div id="rock25" class="rockSmall"></div>
-                <div id="rock26" class="rockSmall"></div>
-            </div>
-            <div id="rocks6" class="rocks7">
-                <div id="rock29" class="rockBase"></div>
+        <div class="underwater" id="underwater">
+            <div id="salmon3div" class="salmon3">
+                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    <symbol viewBox="0 0 600 600" id="salmon3" class="salmon3" preserveAspectRatio="xMinYMin">
+                        <path
+                            d="M 48 113 L 91 206 L 27 280 Q 85.5 263.5 155 258 Q 193 298 256 313 Q 344 334 450 300 L 576 244 Q 451 265 426 218 Q 441 176 498 176 L 594 174 L 511 138 Q 408 70 312 116 Q 206 110 150 161 L 49 116 Z" />
+                    </symbol>
+                </svg>
+                <svg class="salmon3">
+                    <use xlink:href="#salmon3" />
+                </svg>
             </div>
 
 
+
+            <div id="bubbleContainer1" class="bubbleContainer">
+                <div id="bubbleContainer2" class="bubbleContainer">
+                    <div id="bubbleMedium" class="bubble4"></div>
+                    <div id="bubbleSmall1" class="bubble1"></div>
+                    <div id="bubbleLarge" class="bubble2"></div>
+                    <div id="bubbleSmall2" class="bubble3"></div>
+                </div>
+            </div>
+
+
+            <div id="salmon1" class="salmon1">
+                <div id="salmonTopHalfBackFin" class="topHalfBackFin"> </div>
+                <div id="salmonBottomHalfBackFin" class="bottomHalfBackFin"> </div>
+                <div id="salmonBody" class="body"> </div>
+                <div id="salmonTummy" class="tummy"> </div>
+                <div id="salmonTopFin" class="topFin"> </div>
+                <div id="salmonTopFace" class="topFace"> </div>
+                <div id="salmonBottomFace" class="bottomFace"> </div>
+                <div id="salmonBackFace" class="backFace"> </div>
+                <div id="salmonBottomLeftFin" class="bottomLeftFin"> </div>
+                <div id="salmonBottomRightFin" class="bottomRightFin"> </div>
+                <div id="salmonEye" class="eye"> </div>
+                <div id="salmonBodyLine" class="bodyLine"> </div>
+            </div>
+            <div id="salmon2" class="salmon2">
+                <div id="salmonTopHalfBackFin" class="topHalfBackFin"> </div>
+                <div id="salmonBottomHalfBackFin" class="bottomHalfBackFin"> </div>
+                <div id="salmonBody" class="body"> </div>
+                <div id="salmonTummy" class="tummy"> </div>
+                <div id="salmonTopFin" class="topFin"> </div>
+                <div id="salmonTopFace" class="topFace"> </div>
+                <div id="salmonBottomFace" class="bottomFace"> </div>
+                <div id="salmonBackFace" class="backFace"> </div>
+                <div id="salmonBottomLeftFin" class="bottomLeftFin"> </div>
+                <div id="salmonBottomRightFin" class="bottomRightFin"> </div>
+                <div id="salmonEye" class="eye"> </div>
+                <div id="salmonBodyLine" class="bodyLine"> </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div id="rockbed">
+                <div id="rocks1" class="rocks">
+                    <div id="rock1" class="rock"></div>
+                    <div id="rock2" class="rock"></div>
+                    <div id="rock6" class="rockSmall"></div>
+                    <div id="rock7" class="rock"></div>
+                    <div id="rock8" class="rock"></div>
+                    <div id="rock11" class="rock"></div>
+                    <div id="rock27" class="rockBase"></div>
+                    <div id="rock28" class="rockBase"></div>
+                </div>
+                <div id="rocks7" class="rocks3">
+                    <div id="rock4" class="rockSmall"></div>
+                    <div id="rock3" class="rockSmall"></div>
+                    <div id="rock5" class="rockSmall"></div>
+                    <div id="rock9" class="rockSmall"></div>
+                    <div id="rock10" class="rock"></div>
+                </div>
+                <div id="rocks2" class="rocks1">
+                    <div id="rock1" class="rock"></div>
+                    <div id="rock2" class="rock"></div>
+                    <div id="rock6" class="rockSmall"></div>
+                    <div id="rock7" class="rock"></div>
+                    <div id="rock8" class="rock"></div>
+                    <div id="rock11" class="rock"></div>
+                </div>
+                <div id="rocks3" class="rocks2">
+                    <div id="rock12" class="rock"></div>
+                    <div id="rock13" class="rock"></div>
+                    <div id="rock14" class="rockSmall"></div>
+                    <div id="rock15" class="rockSmall"></div>
+                    <div id="rock16" class="rockSmall"></div>
+                    <div id="rock17" class="rockSmall"></div>
+                    <div id="rock18" class="rock"></div>
+                </div>
+                <div id="rocks4" class="rocks7">
+                    <div id="rock19" class="rock"></div>
+                    <div id="rock20" class="rock"></div>
+                </div>
+                <div id="rocks5" class="rocks4">
+                    <div id="rock21" class="rock"></div>
+                    <div id="rock22" class="rock"></div>
+                    <div id="rock23" class="rockSmall"></div>
+                    <div id="rock24" class="rockSmall"></div>
+                    <div id="rock25" class="rockSmall"></div>
+                    <div id="rock26" class="rockSmall"></div>
+                </div>
+                <div id="rocks6" class="rocks7">
+                    <div id="rock29" class="rockBase"></div>
+                </div>
+            </div>
         </div>
     </div>
+    </div>
 </body>
-<script>/* all JS/gsap from https://codepen.io/fremdev/pen/ZOPQQB */
-    TweenMax.set(salmon1, { x: '-500', transformOrigin: 'center, center' });
-    TweenMax.set(salmon2, { x: '-500', transformOrigin: 'center, center' });
-    function moveFish(fish, step, stepTime, stepNum, deg, direction) {
-        var sign = (direction === 'left') ? '-=' : '+=';
-        var degAdjustment = (direction === 'left') ? 0 : 180;
-        var tl = new TimelineMax({ repeat: -1 });
+<script>/* all JS/gsap from https://codepen.io/fremdev/pen/ZOPQQB
+TweenMax.set(salmon1, { x: '-500', transformOrigin: 'center, center' });
+TweenMax.set(salmon2, { x: '-500', transformOrigin: 'center, center' });
+function moveFish(fish, step, stepTime, stepNum, deg, direction) {
+var sign = (direction === 'left') ? '-=' : '+=';
+var degAdjustment = (direction === 'left') ? 0 : 180;
+var tl = new TimelineMax({ repeat: -1 });
 
-        for (var i = 1; i <= stepNum; i++) {
-            if (i % 2 === 0) {
-                tl.to(fish, stepTime, { x: sign + step, skewY: degAdjustment - deg + 'deg', ease: Power0.easeNone });
-            }
-            else {
-                tl.to(fish, stepTime, { x: sign + step, skewY: degAdjustment + deg + 'deg', ease: Power0.easeNone });
-            }
-        }
-    }
+for (var i = 1; i <= stepNum; i++) {
+if (i % 2 === 0) {
+tl.to(fish, stepTime, { x: sign + step, skewY: degAdjustment - deg + 'deg', ease: Power0.easeNone });
+}
+else {
+tl.to(fish, stepTime, { x: sign + step, skewY: degAdjustment + deg + 'deg', ease: Power0.easeNone });
+}
+}
+}
 
-    function moveFishes() {
-        moveFish(salmon1, 125, 0.75, 20, 2, 'right');
-        moveFish(salmon2, 125, 0.75, 20, 2, 'right');
-    }
+function moveFishes() {
+moveFish(salmon1, 125, 0.75, 10, 2, 'right');
+moveFish(salmon2, 125, 0.75, 10, 2, 'right');
+}
 
 
-    var master = new TimelineMax();
-    master.add(moveFishes);
-
+var master = new TimelineMax();
+master.add(moveFishes);
+*/
 </script>
 
 </html>

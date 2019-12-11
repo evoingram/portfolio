@@ -1,5 +1,6 @@
 body {
-    background-color: #668aaa;
+    height: 100%;
+    background-color: transparent;
     box-sizing: border-box;
     width: calc(100% + 50px);
     overflow-x: hidden;
@@ -16,33 +17,36 @@ body {
 .topHalfBackFin {
     width: 0;
     height: 0;
-    border-bottom: 100px solid #6a6815;
-    border-right: 100px solid transparent;
-    transform: rotate(220deg);
+    border-bottom: 10vh solid #6a6815;
+    border-right: 9.5vh solid transparent;
+    transform: rotate(214deg);
     position: relative;
     top: 50px;
-    left: 10px;
+    left: 6px;
     z-index: 3;
 }
 
 .bottomHalfBackFin {
+    position: relative;
     width: 0;
     height: 0;
-    border-bottom: 100px solid #6a6815;
-    border-left: 100px solid transparent;
-    transform: rotate(-13deg);
+    border-bottom: 9.5vh solid #6a6815;
+    border-left: 9.5vh solid transparent;
+    transform: rotate(-130deg);
+    top: 20px;
+    left: 6px;
     z-index: 3;
 }
 
 .body {
     width: 200px;
-    height: 75px;
+    height: 83px;
     background: #c24941;
     position: relative;
-    top: -70px;
+    top: -67px;
     left: 80px;
     transform: rotate(25deg);
-    z-index: 1;
+    z-index: 24;
 }
 
 .body:before {
@@ -82,13 +86,13 @@ body {
     transform: rotate(23deg);
     top: -68px;
     left: 95px;
-    z-index: 2;
+    z-index: 25;
 }
 
 .topFin {
     position: relative;
-    width: 38.5px;
-    height: 25px;
+    width: 4.5vh;
+    height: 3vh;
     transform: rotate(40deg) translate(0px, 2px) skew(-4deg, -40deg);
     background: #9d3627;
     top: -200px;
@@ -100,12 +104,12 @@ body {
     position: relative;
     width: 0;
     height: 0;
-    border-top: 50px solid transparent;
-    border-left: 100px solid #6a6815;
-    border-bottom: 50px solid transparent;
+    border-top: 6vh solid transparent;
+    border-left: 10vh solid #6a6815;
+    border-bottom: 5vh solid transparent;
     top: -150px;
     left: 230px;
-    z-index: 0;
+    z-index: 15;
     transform: rotate(36deg);
 }
 
@@ -113,12 +117,12 @@ body {
     position: relative;
     width: 0;
     height: 0;
-    border-top: 100px solid transparent;
-    border-left: 50px solid #6a6815;
-    border-bottom: 100px solid transparent;
+    border-top: 9vh solid transparent;
+    border-left: 6vh solid #6a6815;
+    border-bottom: 11.5vh solid transparent;
     top: -330px;
     left: 250px;
-    z-index: 0;
+    z-index: 12;
     transform: rotate(-240deg);
 }
 
@@ -132,7 +136,7 @@ body {
     transform: rotate(115deg);
     top: -430px;
     left: 225px;
-    z-index: 5;
+    z-index: 1;
 }
 
 .bottomLeftFin {
@@ -176,7 +180,7 @@ body {
     background: #3d3839;
     bottom: 550px;
     left: 120px;
-    z-index: 15;
+    z-index: 30;
     transform: rotate(25deg);
 }
 
@@ -185,8 +189,8 @@ body {
 .salmon1 {
     position: relative;
     transform: rotate(-25deg) scaleX(-1);
-    overflow-x: hidden;
     right: 0vh;
+    top: 20vh;
     max-width: 20%;
 }
 
@@ -195,8 +199,8 @@ body {
     transform: rotate(-25deg) scaleX(-1);
     overflow-x: hidden;
     right: 10vh;
-    top: -18vh;
-    max-width: 20%;
+    top: -30vh;
+    max-width: 80vh;
     padding-bottom: -80%;
 }
 
@@ -285,7 +289,7 @@ body {
 
 #rockbed {
     position: absolute;
-    top: 18vh;
+    top: 85vh;
     left: -3.5vh;
     width: 95%;
 }
@@ -568,9 +572,160 @@ clip-path: polygon(73% 56%, 82% 61%, 86% 73%, 78% 76%, 66% 74%, 56% 66%);
 clip-path: polygon(73% 56%, 82% 61%, 81% 68%, 78% 76%, 66% 74%, 67% 67%);
 clip-path: polygon(57% 65%, 64% 68%, 72% 70%, 78% 76%, 48% 74%, 36% 69%);
 
+waves paths:
+
+-webkit-clip-path: polygon(77% 58%, 43% 67%, 71% 41%, 85% 45%, 100% 67%, 100% 100%, 30% 100%, 84% 90%, 94% 77%);
+clip-path: polygon(77% 58%, 43% 67%, 71% 41%, 85% 45%, 100% 67%, 100% 100%, 30% 100%, 84% 90%, 94% 77%);
+
+path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450 300 Q 400 350 350 300 Q 300 350 250 300 Q 200 350 150 300 Q 100 350 50 300 
 */
 
 /* bubble animations */
+
+html {
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.environment {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: none;
+    margin: -2%;
+    margin-bottom: -10%;
+    padding: 0;
+    z-index: 50;
+    background-color: transparent;
+}
+
+symbol {
+    z-index: 50;
+}
+
+path {
+    z-index: 50;
+}
+
+rect {
+    z-index: 10;
+}
+
+.sky {
+    display: flex;
+    width: 100%;
+    height: 56vh;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    background-color: #57c3ef;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.beach {
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    margin: -2%;
+    padding: 0;
+    background-color: #f5f2d1;
+    z-index: 25;
+    overflow: hidden;
+    transform: translate(0px, -25vh);
+    margin-top: -5%;
+}
+
+.ocean {
+    bottom: 30%;
+    margin: 0;
+    padding: 0;
+    z-index: 50;
+    transform: translate(0px, -10vh);
+    overflow: hidden;
+    margin: -0.2%;
+}
+
+.sceneContainer {
+    background-color: transparent;
+    z-index: 1;
+}
+
+.water__wave-front, .water__wave-back {
+    width: 220%;
+    background-size: 100% 100%;
+    animation: movingWater;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    left: -10px;
+    top: 9%;
+    fill: #f5f2d1;
+    opacity: 0.9;
+    height: 70vh;
+    z-index: 50;
+}
+
+.water__wave-back {
+    animation-delay: 200ms;
+    animation-direction: reverse;
+    animation-duration: 10s;
+    fill: #7abcdb;
+    top: 25%;
+    opacity: 1;
+    z-index: 50;
+    padding-top: 1%;
+}
+
+.water__wave-front--fill {
+    background-image: linear-gradient(to top, #365165, #537C9B);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    z-index: 30;
+}
+
+.water__wave-back--fill {
+    background-image: linear-gradient(to top, #7abcdb, #7abcdb);
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    width: 100%;
+    height: 57%;
+    z-index: 30;
+    padding-top: 1%;
+}
+
+.underwater {
+    background-color: #365165;
+    margin: -2%;
+    padding: 0;
+    transform: translate(0px, -28vh);
+    z-index: 0;
+}
+
+#salmon3 {
+    fill: #c24941;
+    margin: -2%;
+    padding: 0;
+    z-index: 100000;
+    transform: translate(0px, -50vh);
+    opacity: 1;
+}
+
+.salmon3div {
+    margin: 0;
+    padding: 0;
+    z-index: 20000;
+    width: 100%;
+    height: 63%;
+    transform: translate(0px, 0vh);
+}
 
 @keyframes wobble {
     33% {
@@ -591,5 +746,14 @@ clip-path: polygon(57% 65%, 64% 68%, 72% 70%, 78% 76%, 48% 74%, 36% 69%);
     100% {
         opacity: 0;
         transform: translateY(-1000px);
+    }
+}
+
+@keyframes movingWater {
+    50% {
+        transform: translateX(-25%) translateY(1%);
+    }
+    100% {
+        transform: translateX(-50%);
     }
 }
