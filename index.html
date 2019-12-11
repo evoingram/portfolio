@@ -15,50 +15,51 @@
         <div class="sceneContainer" id="sceneContainer">
             <div id="environment" class="environment">
                 <div class="sky" id="sky"></div>
-                <div class="ocean">
-                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                        <symbol viewBox="200 0 2744 175" id="water-waves" preserveAspectRatio="xMinYMin">
-                            <path d="M 50 50 Q 100 100 150 50 Q 200 100 250 50 Q 300 100 350 50 Q 400 100 450 50 Q 500 100 550 50 Q 600 100 650 50 Q 700 100 750 50 Q 800 100 850 50 Q 900 100 950 50 Q 1000 100 1050 50 Q 1100 100 1150 50 Q 1200 100 1250 50 Q 1300 100 1350 50 Q 1400 100 1450 50 Q 1500 100 1550 50 Q 1600 100 1650 50 Q 1700 100 1750 50 Q 1800 100 1850 50 
-                                Q 1900 100 1950 50 
-                                Q 2000 100 2050 50 
-                                Q 2100 100 2150 50 
-                                Q 2200 100 2250 50 
-                                Q 2300 100 2350 50 
-                                Q 2400 100 2450 50 
-                                Q 2500 100 2550 50 
-                                Q 2600 100 2650 50 
-                                Q 2700 100 2750 50 " />
-
-                        </symbol>
-                    </svg>
-                    <svg class="water__wave-back">
-                        <use xlink:href="#water-waves" />
-                    </svg>
-                    <div class="water__wave-back--fill"></div>
-                    <svg class="water__wave-front">
-                        <use xlink:href="#water-waves" />
-                    </svg>
-                    <div class="water__wave-front--fill"></div>
-
-                </div>
+                <div class="beach" id="beach"></div>
+                <div class="underwater" id="underwater"></div>
             </div>
-            <div class="beach" id="beach">
-            </div>
-
-        </div>
-        <div class="underwater" id="underwater">
-            <div id="salmon3div" class="salmon3">
+            <div class="ocean">
                 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                    <symbol viewBox="0 0 600 600" id="salmon3" class="salmon3" preserveAspectRatio="xMinYMin">
-                        <path
-                            d="M 48 113 L 91 206 L 27 280 Q 85.5 263.5 155 258 Q 193 298 256 313 Q 344 334 450 300 L 576 244 Q 451 265 426 218 Q 441 176 498 176 L 594 174 L 511 138 Q 408 70 312 116 Q 206 110 150 161 L 49 116 Z" />
+                    <symbol viewBox="200 0 2744 175" id="water-waves" preserveAspectRatio="xMinYMin meet">
+                        <path d="M 50 50 Q 100 100 150 50 Q 200 100 250 50 Q 300 100 350 50 Q 400 100 450 50 Q 500 100 550 50 Q 600 100 650 50 Q 700 100 750 50 Q 800 100 850 50 Q 900 100 950 50 Q 1000 100 1050 50 Q 1100 100 1150 50 Q 1200 100 1250 50 Q 1300 100 1350 50 Q 1400 100 1450 50 Q 1500 100 1550 50 Q 1600 100 1650 50 Q 1700 100 1750 50 Q 1800 100 1850 50 
+                                            Q 1900 100 1950 50 
+                                            Q 2000 100 2050 50 
+                                            Q 2100 100 2150 50 
+                                            Q 2200 100 2250 50 
+                                            Q 2300 100 2350 50 
+                                            Q 2400 100 2450 50 
+                                            Q 2500 100 2550 50 
+                                            Q 2600 100 2650 50 
+                                            Q 2700 100 2750 50 " />
+
                     </symbol>
                 </svg>
-                <svg class="salmon3">
-                    <use xlink:href="#salmon3" />
+                <svg class="water__wave-back">
+                    <use xlink:href="#water-waves" />
                 </svg>
-            </div>
+                <div class="water__wave-back--fill"></div>
+                <svg class="water__wave-front">
+                    <use xlink:href="#water-waves" />
+                </svg>
+                <div class="water__wave-front--fill"></div>
 
+            </div>
+            <div id="uwAnimals" class="uwAnimals">
+                <div id="salmon3div" class="salmon3">
+                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none meet">
+                        <symbol viewBox="0 0 600 600" id="salmon3" class="salmon3" preserveAspectRatio="xMinYMin">
+                            <path
+                                d="M 48 113 L 91 206 L 27 280 Q 85.5 263.5 155 258 Q 193 298 256 313 Q 344 334 450 300 L 576 244 Q 451 265 426 218 Q 441 176 498 176 L 594 174 L 511 138 Q 408 70 312 116 Q 206 110 150 161 L 49 116 Z" />
+                        </symbol>
+                    </svg>
+                    <svg class="salmon3">
+                        <use xlink:href="#salmon3" />
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+        <div class="underwater1" id="underwater1">
 
 
             <div id="bubbleContainer1" class="bubbleContainer">
