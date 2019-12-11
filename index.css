@@ -663,7 +663,7 @@ rect {
 	animation-timing-function: linear;
 	position: absolute;
 	left: -1%;
-	top: 8%;
+	top: -2%;
 	fill: #f5f2d1;
 	opacity: 1;
 	height: 70vh;
@@ -689,7 +689,7 @@ rect {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 45%;
+	height: 35%;
 	z-index: 30;
 	background-color: transparent;
 }
@@ -715,26 +715,22 @@ rect {
 }
 
 .uwAnimals {
-	background-color: transparent;
-	transform: translate(0px, -40vh);
 }
 
-#salmon3 {
-	fill: #c24941;
-	margin: -2%;
-	padding: 0;
-	z-index: 100000;
-	transform: translate(0px, -50vh);
-	opacity: 1;
+.divSalmon {
+	width: 15%;
+	justify-content: center;
+	margin-left: 5%;
 }
 
-.salmon3div {
-	margin: 0;
-	padding: 0;
-	z-index: 20000;
-	width: 100%;
-	height: 63%;
-	transform: translate(0px, 0vh);
+.divSalmon3 {
+	z-index: 99960;
+	transform: translate(-2vh, -10vh);
+}
+
+.divSalmon4 {
+	z-index: 99960;
+	transform: translate(2vh, -7vh);
 }
 
 @keyframes wobble {
