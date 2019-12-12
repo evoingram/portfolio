@@ -698,7 +698,7 @@ rect {
 .divSalmon3 {
     transform: translate(-2vh, -6vh);
     animation: wobble3;
-    animation-duration: 6s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -706,7 +706,7 @@ rect {
 .divSalmon4 {
     transform: translate(2vh, -3vh);
     animation: wobble4;
-    animation-duration: 6s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -720,9 +720,10 @@ rect {
 }
 
 .divSalmon6 {
+    opacity: 0;
     transform: translate(5vh, -5vh);
     animation: jumpOutWater;
-    animation-duration: 8s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -837,25 +838,45 @@ rect {
 }
 
 @keyframes jumpOutWater {
+
     /* transform: translate(15vh, -15vh);*/
+    0% {
+        opacity: 1;
+        transform: translate(0vh, -15vh);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translate(15vh, -15vh);
+
+    }
 
     25% {
+        opacity: 1;
         transform: rotate(-40deg) translateX(50vh) translateY(-30vh);
     }
 
     50% {
+        opacity: 1;
         transform: rotate(-20deg) translateX(90vh) translateY(-20vh);
     }
 
 
     70% {
 
+        opacity: 1;
         transform: rotate(0deg) translateX(125vh) translateY(-15vh);
     }
 
     90% {
 
+        opacity: 1;
         transform: rotate(20deg) translateX(175vh) translateY(-10vh);
+    }
+
+    100% {
+
+        opacity: 0;
     }
 
 }
