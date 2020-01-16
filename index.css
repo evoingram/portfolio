@@ -689,10 +689,23 @@ rect {
     margin-bottom: 5%;
 }
 
+
 .divSalmon {
     width: 10%;
     margin-left: 5%;
     z-index: 99000;
+}
+
+#divSalmon {
+    transform: translate(0vh, -85vh);
+
+}
+
+.crab {
+    width: 50%;
+    margin-left: 5%;
+    transform: translate(12vh, -43vh);
+    z-index: 99060;
 }
 
 .divSalmon3 {
@@ -701,6 +714,7 @@ rect {
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    z-index: 99000;
 }
 
 .divSalmon4 {
@@ -709,6 +723,7 @@ rect {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    z-index: 99000;
 }
 
 .divSalmon5 {
@@ -717,6 +732,7 @@ rect {
     animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    z-index: 99000;
 }
 
 .divSalmon6 {
@@ -726,6 +742,7 @@ rect {
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    z-index: 99000;
 }
 
 @keyframes wobble {
@@ -874,12 +891,14 @@ rect {
         transform: rotate(20deg) translateX(175vh) translateY(-10vh);
     }
 
-    100% {
+    98% {
 
         opacity: 0;
+        transform: rotate(-20deg) translateX(225vh) translateY(-15vh);
     }
 
 }
+
 
 /*
 fish jump out of water animation
