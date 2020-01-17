@@ -293,6 +293,7 @@ body {
     left: -3.5vh;
     width: 100%;
     z-index: 70;
+    transform: translate(0px, -12vh);
 }
 
 .rocks {
@@ -574,6 +575,7 @@ html {
     padding: 0;
     z-index: 50;
     background-color: transparent;
+    transform: translate(0px, -95vh);
 }
 
 symbol {
@@ -598,6 +600,7 @@ rect {
     background-color: #57c3ef;
     z-index: 10;
     overflow: hidden;
+    transform: translate(0px, -80vh);
 }
 
 .beach {
@@ -609,7 +612,7 @@ rect {
     background-color: #f5f2d1;
     z-index: 10;
     overflow: hidden;
-    transform: translate(0px, -5vh);
+    transform: translate(0px, -80vh);
     margin-top: -5%;
 }
 
@@ -629,16 +632,15 @@ rect {
     margin-left: -2%;
 }
 
-.water__wave-front,
-.water__wave-back {
-    width: 220%;
+.water__wave-front, .water__wave-back {
+    width: 100%;
     animation: movingWater;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     position: absolute;
     left: -1%;
-    top: -2%;
+    top: -5%;
     fill: #f5f2d1;
     opacity: 1;
     z-index: 50;
@@ -659,7 +661,7 @@ rect {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 4044px;
     height: 34%;
     z-index: 30;
     background-color: transparent;
@@ -687,25 +689,40 @@ rect {
 
 .uwAnimals {
     margin-bottom: 5%;
+    transform: translate(0px, 65vh);
+    z-index: 100;
 }
 
+.log {
+    width: 30vh;
+    transform: translate(115vh, 25vh);
+    z-index: 100;
+}
+
+.trees {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 150vh;
+    transform: translate(15vh, -10vh);
+    z-index: 100;
+}
 
 .divSalmon {
     width: 10%;
-    margin-left: 5%;
+    margin-left: 2%;
+    margin-top: -1.5%;
     z-index: 99000;
 }
 
 #divSalmon {
-    transform: translate(0vh, -85vh);
-
+    transform: translate(0vh, -75vh);
 }
 
 .crab {
-    width: 50%;
+    width: 45%;
     margin-left: 5%;
-    transform: translate(12vh, -43vh);
-    z-index: 99060;
+    transform: translate(-25vh, -46vh);
+    z-index: 98999;
 }
 
 .divSalmon3 {
@@ -742,14 +759,13 @@ rect {
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    z-index: 99000;
+    z-index: 99100;
 }
 
 @keyframes wobble {
     33% {
         transform: translateX(-50px);
     }
-
     66% {
         transform: translateX(50px);
     }
@@ -759,15 +775,12 @@ rect {
     25% {
         transform: translateX(30vh) translateY(-15%);
     }
-
     50% {
         transform: translateX(70vh) translateY(20%);
     }
-
     75% {
         transform: translateX(110vh) translateY(-15%);
     }
-
     100% {
         transform: translateX(150vh) translateY(20%);
     }
@@ -777,15 +790,12 @@ rect {
     25% {
         transform: translateX(20vh) translateY(-20%);
     }
-
     50% {
         transform: translateX(60vh) translateY(10%);
     }
-
     75% {
         transform: translateX(90vh) translateY(-20%);
     }
-
     100% {
         transform: translateX(145vh) translateY(10%);
     }
@@ -795,15 +805,12 @@ rect {
     25% {
         transform: translateX(25vh) translateY(-10%);
     }
-
     50% {
         transform: translateX(65vh) translateY(15%);
     }
-
     75% {
         transform: translateX(105vh) translateY(-10%);
     }
-
     100% {
         transform: translateX(145vh) translateY(15%);
     }
@@ -813,31 +820,24 @@ rect {
     25% {
         transform: translateX(50vh) translateY(-30vh);
     }
-
     50% {
         transform: translateX(85vh) translateY(-20vh);
     }
-
     75% {
         transform: translateX(115vh) translateY(-30vh);
     }
-
     100% {
         transform: translateX(145vh) translateY(-20vh);
     }
 }
 
-
 @keyframes up {
     0% {
         opacity: 0;
     }
-
-    20%,
-    90% {
+    20%, 90% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
         transform: translateY(-1000px);
@@ -846,59 +846,44 @@ rect {
 
 @keyframes movingWater {
     50% {
-        transform: translateX(-15%);
+        transform: translateX(5%);
     }
-
     100% {
-        transform: translateX(-30%);
+        transform: translateX(-5%);
     }
 }
 
 @keyframes jumpOutWater {
-
     /* transform: translate(15vh, -15vh);*/
     0% {
         opacity: 1;
         transform: translate(0vh, -15vh);
     }
-
     10% {
         opacity: 1;
         transform: translate(15vh, -15vh);
-
     }
-
     25% {
         opacity: 1;
         transform: rotate(-40deg) translateX(50vh) translateY(-30vh);
     }
-
     50% {
         opacity: 1;
         transform: rotate(-20deg) translateX(90vh) translateY(-20vh);
     }
-
-
     70% {
-
         opacity: 1;
         transform: rotate(0deg) translateX(125vh) translateY(-15vh);
     }
-
     90% {
-
         opacity: 1;
-        transform: rotate(20deg) translateX(175vh) translateY(-10vh);
+        transform: rotate(20deg) translateX(200vh) translateY(-15vh);
     }
-
     98% {
-
         opacity: 0;
-        transform: rotate(-20deg) translateX(225vh) translateY(-15vh);
+        transform: rotate(0deg) translateX(700vh) translateY(30vh);
     }
-
 }
-
 
 /*
 fish jump out of water animation
