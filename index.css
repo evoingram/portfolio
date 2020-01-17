@@ -293,7 +293,7 @@ body {
     left: -3.5vh;
     width: 100%;
     z-index: 70;
-    transform: translate(0px, -12vh);
+    transform: translate(0px, -15vh);
 }
 
 .rocks {
@@ -575,7 +575,7 @@ html {
     padding: 0;
     z-index: 50;
     background-color: transparent;
-    transform: translate(0px, -95vh);
+    transform: translate(0px, -117vh);
 }
 
 symbol {
@@ -619,7 +619,7 @@ rect {
 .ocean {
     bottom: 28%;
     padding: 0;
-    transform: translate(0px, -1vh);
+    transform: translate(0px, 5vh);
     overflow: hidden;
     margin: 0.5%;
     margin-left: -2%;
@@ -695,7 +695,7 @@ rect {
 
 .log {
     width: 30vh;
-    transform: translate(115vh, 25vh);
+    transform: translate(115vh, 35vh);
     z-index: 100;
 }
 
@@ -721,8 +721,14 @@ rect {
 .crab {
     width: 45%;
     margin-left: 5%;
-    transform: translate(-25vh, -46vh);
+    transform: translate(20vh, -34vh);
     z-index: 98999;
+}
+
+.woodSign {
+    width: 12%;
+    transform: translate(5vh, -72vh);
+    z-index: 900;
 }
 
 .divSalmon3 {
@@ -865,7 +871,7 @@ rect {
     }
     25% {
         opacity: 1;
-        transform: rotate(-40deg) translateX(50vh) translateY(-30vh);
+        transform: rotate(-40deg) translateX(50vh) translateY(-20vh);
     }
     50% {
         opacity: 1;
