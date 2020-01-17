@@ -293,7 +293,7 @@ body {
     left: -3.5vh;
     width: 100%;
     z-index: 70;
-    transform: translate(0px, -15vh);
+    transform: translate(0px, -10vh);
 }
 
 .rocks {
@@ -695,7 +695,7 @@ rect {
 
 .log {
     width: 30vh;
-    transform: translate(115vh, 35vh);
+    transform: translate(115vh, 30vh);
     z-index: 100;
 }
 
@@ -721,7 +721,7 @@ rect {
 .crab {
     width: 45%;
     margin-left: 5%;
-    transform: translate(20vh, -34vh);
+    transform: translate(20vh, -38vh);
     z-index: 98999;
 }
 
@@ -736,7 +736,7 @@ rect {
     z-index: 99000;
     font-family: 'Finger Paint', cursive;
     line-height: 2.35em;
-    transform: rotate(-3deg) translate(15vh, -97.75vh);
+    transform: rotate(-3deg) translate(14.5vh, -96.75vh);
 }
 
 a:link, a:visited {
@@ -781,6 +781,18 @@ a:link, a:visited {
     z-index: 99100;
 }
 
+.devdetails {
+    display: flex;
+    width: 60%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.codeItem {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
 .popup {
     display: flex;
     align-items: center;
@@ -794,9 +806,14 @@ a:link, a:visited {
     z-index: 2;
     visibility: hidden;
     opacity: 0;
-    overflow: hiden;
     transition: .64s ease-in-out;
     z-index: 99200;
+    font-family: 'IM Fell English', serif;
+    font-size: 0.75rem;
+}
+
+.popup h1, .popup h2, .popup h3 {
+    line-height: 0.5rem;
 }
 
 .popup-inner {
@@ -809,7 +826,7 @@ a:link, a:visited {
     max-height: 600px;
     width: 60%;
     height: 80%;
-    background-color: #fff;
+    background-color: #F5F2D1;
     transform: rotate(32deg);
     transition: .64s ease-in-out;
 }
@@ -832,9 +849,12 @@ a:link, a:visited {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
-    height: 100%;
+    width: 65%;
+    height: 78%;
     padding: 4rem;
+    color: #162605;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .popuptext h1 {
@@ -842,18 +862,39 @@ a:link, a:visited {
     font-weight: 600;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    color: #0A0A0A;
+    color: #162605;
 }
 
 .popuptext p {
     font-size: .875rem;
-    color: #686868;
+    color: #162605;
     line-height: 1.5;
 }
 
 .popuptext a {
     text-decoration: none;
-    color: #47BDFF;
+    color: #162605;
+    position: relative;
+    padding: 0.05rem 0 0.05rem;
+    margin: 0.05rem;
+    text-decoration: none;
+}
+
+.popuptext a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 0.5px;
+    background-color: #162605;
+    transition: transform 250ms;
+}
+
+.popuptext a:hover::after {
+    transform: translateX(-50%) scaleX(1);
 }
 
 .popup:target {
@@ -876,9 +917,9 @@ a:link, a:visited {
     font-size: .875rem;
     font-weight: 300;
     border-radius: 100%;
-    background-color: #47BDFF;
+    background-color: #162605;
     z-index: 4;
-    color: #fff;
+    color: #F5F2D1;
     line-height: 3rem;
     text-align: center;
     cursor: pointer;
