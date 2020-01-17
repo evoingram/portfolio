@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Finger+Paint&display=swap" rel="stylesheet">
     <title>Portfolio of Erica L. Ingram</title>
 </head>
 
@@ -1028,6 +1029,12 @@
                         transform="translate(-186.95 -193.43)" />
                 </svg>
             </div>
+            <div class="signWords" id="signWords">
+                <div><a href="#resume">Resume</a></div>
+                <div><a href="#projects">Projects</a></div>
+                <div><a href="#contact">Contact</a></div>
+
+            </div>
             <div id="environment" class="environment">
                 <div id="rockbed">
                     <div id="rocks1" class="rocks">
@@ -1847,11 +1854,51 @@
                 <div class="beach" id="beach"></div>
                 <div class="underwater" id="underwater"></div>
             </div>
+            <div id="resume" class="popup">
+                <div class="popup-inner">
+                <div class="popupphoto">
+                    <img src="https://images.pexels.com/photos/193349/pexels-photo-193349.jpeg?cs=srgb&dl=access-algorithm-binary-193349.jpg&fm" alt="">
+                </div>
+                <div class="popuptext">
+                    <h1>RESUME Pure CSS Pop-Up WebDevTrick</h1>
+                    <p>Webdevtrick is a blog for web designer and developers. We share example of simple web programs with source code. Simple programs make different this blog from others, because others share advanced program. And advance program maybe difficult for beginners. <a href="https://webdevtrick.com">Visit WebDevTrick</a></p>
+                </div>
+                <a class="closepopup" href="#">X</a>
+                </div>
+
+            </div>
+            <div id="projects" class="popup">
+                <div class="popup-inner">
+                <div class="popupphoto">
+                    <img src="https://images.pexels.com/photos/193349/pexels-photo-193349.jpeg?cs=srgb&dl=access-algorithm-binary-193349.jpg&fm" alt="">
+                </div>
+                <div class="popuptext">
+                    <h1>PROJECTS Pure CSS Pop-Up WebDevTrick</h1>
+                    <p>Webdevtrick is a blog for web designer and developers. We share example of simple web programs with source code. Simple programs make different this blog from others, because others share advanced program. And advance program maybe difficult for beginners. <a href="https://webdevtrick.com">Visit WebDevTrick</a></p>
+                </div>
+                <a class="closepopup" href="#">X</a>
+                </div>
+
+            </div>
+            <div id="contact" class="popup">
+                <div class="popup-inner">
+                <div class="popupphoto">
+                    <img src="https://images.pexels.com/photos/193349/pexels-photo-193349.jpeg?cs=srgb&dl=access-algorithm-binary-193349.jpg&fm" alt="">
+                </div>
+                <div class="popuptext">
+                    <h1>CONTACT Pure CSS Pop-Up WebDevTrick</h1>
+                    <p>Webdevtrick is a blog for web designer and developers. We share example of simple web programs with source code. Simple programs make different this blog from others, because others share advanced program. And advance program maybe difficult for beginners. <a href="https://webdevtrick.com">Visit WebDevTrick</a></p>
+                </div>
+                <a class="closepopup" href="#">X</a>
+                </div>
+
+            </div>
         </div>
     </div>
     </div>
 </body>
-<script>/* all JS/gsap from https://codepen.io/fremdev/pen/ZOPQQB
+<script>
+    /* all JS/gsap from https://codepen.io/fremdev/pen/ZOPQQB
 TweenMax.set(salmon1, { x: '-500', transformOrigin: 'center, center' });
 TweenMax.set(salmon2, { x: '-500', transformOrigin: 'center, center' });
 function moveFish(fish, step, stepTime, stepNum, deg, direction) {
