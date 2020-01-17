@@ -812,8 +812,13 @@ a:link, a:visited {
     font-size: 0.75rem;
 }
 
-.popup h1, .popup h2, .popup h3 {
-    line-height: 0.5rem;
+.popup h2, .popup h3, .popup h4 {
+    line-height: 0.50rem;
+    margin-bottom: 0.5rem;
+}
+
+.popup h3, .popup h4 {
+    margin-left: 1rem;
 }
 
 .popup-inner {
@@ -849,9 +854,11 @@ a:link, a:visited {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 65%;
-    height: 78%;
-    padding: 4rem;
+    width: 85%;
+    height: 95%;
+    padding: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: #162605;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -860,15 +867,16 @@ a:link, a:visited {
 .popuptext h1 {
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 2rem;
     text-transform: uppercase;
     color: #162605;
+    line-height: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .popuptext p {
     font-size: .875rem;
     color: #162605;
-    line-height: 1.5;
+    line-height: 1;
 }
 
 .popuptext a {
