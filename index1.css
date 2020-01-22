@@ -322,9 +322,11 @@ rect {
 
 .sky {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
-    padding: 8% 0 0% 0;
+    max-height: 275px;
+    padding: 0% 0 0% 0;
     margin: 0;
     background-color: #57c3ef;
     z-index: 11;
@@ -359,7 +361,7 @@ rect {
     z-index: 99999;
     width: 115%;
     margin-left: -47%;
-    margin-top: 3%;
+    margin-top: 4%;
 }
 
 #rockbed {
@@ -368,7 +370,7 @@ rect {
     width: 100%;
     z-index: 70;
     min-height: 100%;
-    transform: translate(-10vh, -32vh);
+    transform: translate(-10vh, -31vh);
 }
 
 .sceneContainer {
@@ -410,7 +412,7 @@ rect {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 4044px;
+    width: 3500px;
     height: 34%;
     z-index: 30;
     background-color: transparent;
@@ -421,7 +423,7 @@ rect {
     position: absolute;
     bottom: 3%;
     left: 0;
-    width: 100%;
+    width: 3500px;
     height: 57%;
     z-index: 30;
     padding-top: 1.5%;
@@ -440,6 +442,140 @@ rect {
     z-index: 100;
 }
 
+.day {
+    width: 10%;
+    align-items: flex-start;
+    z-index: 99990;
+    transform: translate(0vh, -2vh);
+}
+
+.night {
+    display: none;
+    height: 0;
+    width: 100%;
+    max-height: 275px;
+    align-items: flex-start;
+    z-index: 99990;
+    transform: translate(0vh, -2vh);
+}
+
+.moonStars {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.stars {
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin-bottom: 3%;
+    margin-right: 1%;
+    margin-left: 04%;
+}
+
+.star {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: #A5ACAF;
+    width: 0px;
+    height: 0px;
+    border-right: 13px solid transparent;
+    border-bottom: 9px solid #A5ACAF;
+    border-left: 13px solid transparent;
+    transform: rotate(35deg);
+}
+
+.star:before {
+    border-bottom: 10px solid #A5ACAF;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -6px;
+    left: -8px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+
+.star:after {
+    position: absolute;
+    display: block;
+    color: #A5ACAF;
+    top: 1px;
+    left: -12px;
+    height: 0px;
+    border-right: 12px solid transparent;
+    border-bottom: 9px solid #A5ACAF;
+    border-left: 12px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+}
+
+.star-row {
+    border: none;
+    transform: translateY(-40%);
+    display: flex;
+    justify-content: flex-end;
+    animation-name: starAnimation;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: forwards;
+    animation-duration: 4s;
+    max-height: 0px;
+}
+
+.starrow1 {
+    max-height: 40px;
+}
+
+.starrow2 {
+    justify-content: flex-start;
+    animation-delay: 1s;
+    max-height: 40px;
+}
+
+.starrow1 {
+    max-height: 40px;
+}
+
+.starrow2 {
+    justify-content: flex-start;
+    animation-delay: 1s;
+    max-height: 40px;
+}
+
+.starrow3 {
+    justify-content: space-around;
+    animation-delay: 2s;
+    max-height: 40px;
+}
+
+.starrow4 {
+    justify-content: center;
+    animation-delay: 3s;
+    max-height: 40px;
+}
+
+.starrow5 {
+    animation-delay: 1s;
+}
+
+.show {
+    display: block;
+    height: 100%;
+}
+
+.hide {
+    display: none;
+    height: 0;
+}
+
 .trees {
     display: flex;
     flex-wrap: nowrap;
@@ -447,7 +583,7 @@ rect {
     align-items: flex-end;
     width: 100%;
     z-index: 99990;
-    transform: translate(0vh, 2vh);
+    transform: translate(0vh, -16vh);
 }
 
 .tree {
@@ -480,7 +616,7 @@ rect {
 
 .woodSign {
     width: 12%;
-    transform: translate(5vh, -15vh);
+    transform: translate(5vh, -12vh);
     z-index: 99898;
 }
 
@@ -490,7 +626,7 @@ rect {
     font-family: 'Finger Paint', cursive;
     line-height: 1.8em;
     font-size: 1.5rem;
-    transform: rotate(-3deg) translate(-8.5vh, -16.5vh);
+    transform: rotate(-3deg) translate(-8.5vh, -13vh);
 }
 
 a:link, a:visited {
@@ -1037,7 +1173,7 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
         transform: translateX(5%);
     }
     100% {
-        transform: translateX(-5%);
+        transform: translateX(0%);
     }
 }
 
@@ -1070,6 +1206,27 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
     98% {
         opacity: 0;
         transform: translateX(300vh) translateY(-15vh);
+    }
+}
+
+@keyframes starAnimation {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
