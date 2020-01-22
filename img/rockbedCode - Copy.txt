@@ -1,0 +1,271 @@
+
+/* rocks */
+
+#rockbed {
+    position: relative;
+    top: 75vh;
+    left: -3.5vh;
+    width: 100%;
+    z-index: 70;
+    transform: translate(0px, -10vh);
+}
+
+.rocks {
+    position: absolute;
+    width: 100%;
+}
+
+.rocks1 {
+    position: absolute;
+    left: 15%;
+    transform: rotateY(180deg);
+    width: 95%;
+}
+
+#rocks2 {
+    position: absolute;
+    left: -10%;
+    transform: rotateY(180deg);
+    width: 95%;
+}
+
+#rocks3 {
+    position: absolute;
+    left: 10%;
+    transform: rotateY(180deg);
+    width: 95%;
+}
+
+.rock {
+    z-index: 1;
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    transform: skew(20deg);
+}
+
+.rockSmall {
+    z-index: 2;
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    transform: skew(20deg);
+}
+
+.rockBase {
+    z-index: 0;
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    transform: skew(20deg);
+}
+
+#rock1 {
+    background: #755e2a;
+    left: 3.3%;
+    top: 2.5vh;
+    clip-path: polygon(62% 22%, 84% 9%, 100% 21%, 100% 75%, 0 75%, 21% 38%);
+}
+
+#rock2 {
+    background: #345119;
+    left: 25%;
+    clip-path: polygon(61% 55%, 83% 61%, 100% 75%, 88% 100%, 0 100%, 10% 71%);
+}
+
+#rock3 {
+    background: #345119;
+    left: 14.5%;
+    clip-path: polygon(75% 65%, 83% 66%, 84% 74%, 78% 76%, 71% 76%, 68% 72%);
+}
+
+#rock4 {
+    background: #421810;
+    clip-path: polygon(59% 59%, 83% 61%, 84% 74%, 67% 81%, 56% 79%, 41% 70%);
+}
+
+#rock5 {
+    background: #345119;
+    left: 19.5%;
+    clip-path: polygon(73% 56%, 82% 61%, 81% 68%, 78% 76%, 66% 74%, 67% 67%);
+}
+
+#rock6 {
+    background: #421810;
+    left: 23.5%;
+    top: 1vh;
+    clip-path: polygon(54% 48%, 79% 40%, 85% 73%, 75% 90%, 30% 93%, 30% 74%);
+}
+
+#rock7 {
+    background: #755e2a;
+    left: 30.5%;
+    clip-path: polygon(61% 55%, 83% 61%, 100% 75%, 88% 100%, 0 100%, 10% 71%);
+}
+
+#rock8 {
+    background: #755e2a;
+    left: 20.5%;
+    clip-path: polygon(36% 33%, 82% 55%, 100% 75%, 88% 100%, 0 100%, 0 54%);
+}
+
+#rock9 {
+    background: #421810;
+    left: 33%;
+    clip-path: polygon(69% 53%, 76% 56%, 79% 64%, 69% 65%, 64% 63%, 60% 58%);
+}
+
+#rock10 {
+    background: #421810;
+    left: 27%;
+    clip-path: polygon(66% 57%, 70% 57%, 74% 62%, 69% 65%, 64% 63%, 60% 58%);
+}
+
+#rock11 {
+    background: #345119;
+    left: 35%;
+    top: 2.5vh;
+    clip-path: polygon(74% 18%, 94% 44%, 100% 75%, 39% 76%, 6% 65%, 35% 32%);
+}
+
+#rock12 {
+    background: #421810;
+    left: 75%;
+    clip-path: ellipse(29% 11% at 70% 42%);
+}
+
+#rock13 {
+    background: #345119;
+    left: 74%;
+    clip-path: ellipse(11% 3% at 70% 42%);
+}
+
+#rock14 {
+    background: #755e2a;
+    left: 78%;
+    clip-path: ellipse(8% 4% at 60% 45%);
+    transform: skew(50deg);
+}
+
+#rock15 {
+    background: #345119;
+    left: 79%;
+    clip-path: ellipse(11% 5% at 60% 43%);
+}
+
+#rock16 {
+    background: #755e2a;
+    left: 79%;
+    clip-path: ellipse(7% 5% at 60% 43%);
+}
+
+#rock17 {
+    background: #421810;
+    left: 80%;
+    clip-path: polygon(59% 59%, 83% 61%, 84% 74%, 67% 81%, 56% 79%, 41% 70%);
+}
+
+#rock18 {
+    background: #345119;
+    left: 78%;
+    clip-path: polygon(66% 59%, 86% 63%, 77% 76%, 39% 76%, 33% 66%, 45% 59%);
+}
+
+#rock19 {
+    background: #755e2a;
+    left: 78%;
+    clip-path: polygon(36% 33%, 82% 55%, 100% 75%, 88% 100%, 0 100%, 0 54%);
+}
+
+#rock20 {
+    background: #421810;
+    left: 83%;
+    clip-path: polygon(36% 33%, 82% 55%, 100% 75%, 88% 100%, 0 100%, 0 54%);
+    transform: rotateY(180deg);
+}
+
+#rock21 {
+    background: #421810;
+    left: 73%;
+    clip-path: ellipse(29% 11% at 70% 42%);
+}
+
+#rock22 {
+    background: #345119;
+    left: 71%;
+    clip-path: ellipse(11% 3% at 70% 42%);
+}
+
+#rock23 {
+    background: #421810;
+    left: 77%;
+    clip-path: ellipse(8% 4% at 60% 45%);
+    transform: skew(50deg);
+}
+
+#rock24 {
+    background: #345119;
+    left: 78.5%;
+    clip-path: ellipse(11% 5% at 60% 43%);
+}
+
+#rock25 {
+    background: #421810;
+    left: 80.5%;
+    clip-path: ellipse(7% 5% at 60% 43%);
+}
+
+#rock26 {
+    background: #345119;
+    left: 80%;
+    clip-path: polygon(59% 59%, 83% 61%, 84% 74%, 67% 81%, 56% 79%, 41% 70%);
+}
+
+#rock27 {
+    background: #345119;
+    left: 9%;
+    clip-path: polygon(36% 33%, 82% 55%, 100% 75%, 88% 100%, 0 100%, 0 54%);
+}
+
+#rock28 {
+    background: #755e2a;
+    left: 15%;
+    clip-path: polygon(36% 33%, 82% 55%, 100% 75%, 88% 100%, 0 100%, 0 54%);
+    transform: rotateY(180deg);
+}
+
+#rock29 {
+    background: #345119;
+    left: 78%;
+    top: 2vh;
+    clip-path: polygon(77% 3%, 94% 17%, 87% 28%, 69% 29%, 62% 20%, 66% 8%);
+}
+
+/* colors: 
+  RED     #421810 
+  GREEN:  #345119
+  BROWN:  #755e2a
+
+clip-path: polygon(66% 59%, 86% 63%, 77% 76%, 39% 76%, 33% 66%, 45% 59%);
+
+ellipse rocks:
+clip-path: ellipse(29% 11% at 70% 42%);
+clip-path: ellipse(11% 3% at 70% 42%);
+clip-path: ellipse(8% 4% at 60% 45%);
+clip-path: ellipse(11% 5% at 60% 43%);
+clip-path: ellipse(7% 5% at 60% 43%);
+
+small rocks:  
+clip-path: polygon(59% 59%, 83% 61%, 84% 74%, 67% 81%, 56% 79%, 41% 70%);
+clip-path: polygon(75% 65%, 83% 66%, 84% 74%, 78% 76%, 71% 76%, 68% 72%);
+clip-path: polygon(73% 56%, 82% 61%, 86% 73%, 78% 76%, 66% 74%, 56% 66%);
+clip-path: polygon(73% 56%, 82% 61%, 81% 68%, 78% 76%, 66% 74%, 67% 67%);
+clip-path: polygon(57% 65%, 64% 68%, 72% 70%, 78% 76%, 48% 74%, 36% 69%);
+
+waves paths:
+
+-webkit-clip-path: polygon(77% 58%, 43% 67%, 71% 41%, 85% 45%, 100% 67%, 100% 100%, 30% 100%, 84% 90%, 94% 77%);
+clip-path: polygon(77% 58%, 43% 67%, 71% 41%, 85% 45%, 100% 67%, 100% 100%, 30% 100%, 84% 90%, 94% 77%);
+
+path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450 300 Q 400 350 350 300 Q 300 350 250 300 Q 200 350 150 300 Q 100 350 50 300 
+*/

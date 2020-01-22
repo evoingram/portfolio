@@ -1,0 +1,248 @@
+
+            <div id="uwAnimals" class="uwAnimals">
+                <div id="crab" class="crab">
+
+
+
+
+
+
+
+
+
+                </div>
+                <div id="divSalmon" width="100%">
+                    <div id="divSalmon3" class="divSalmon divSalmon3">
+
+
+
+
+
+
+
+
+                    </div>
+                    <div id="divSalmon4" class="divSalmon divSalmon4">
+
+
+
+
+
+
+
+
+                    </div>
+                    <div id="divSalmon5" class="divSalmon divSalmon5">
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div id="divSalmon6" class="divSalmon divSalmon6">
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="woodSign" id="woodSign">
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="signWords" id="signWords">
+                <div><a href="#resume">resume</a></div>
+                <div><a href="#projects">projects</a></div>
+                <div><a href="#contact">contact</a></div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div id="rockbed">
+                    <div id="rocks1" class="rocks">
+                        <div id="rock1" class="rock"></div>
+                        <div id="rock2" class="rock"></div>
+                        <div id="rock6" class="rockSmall"></div>
+                        <div id="rock7" class="rock"></div>
+                        <div id="rock8" class="rock"></div>
+                        <div id="rock11" class="rock"></div>
+                        <div id="rock27" class="rockBase"></div>
+                        <div id="rock28" class="rockBase"></div>
+                    </div>
+                    <div id="rocks2" class="rocks1">
+                        <div id="rock1" class="rock"></div>
+                        <div id="rock2" class="rock"></div>
+                        <div id="rock6" class="rockSmall"></div>
+                        <div id="rock7" class="rock"></div>
+                        <div id="rock8" class="rock"></div>
+                        <div id="rock11" class="rock"></div>
+                    </div>
+                    <div id="rocks3" class="rocks">
+                        <div id="rock1" class="rock"></div>
+                        <div id="rock2" class="rock"></div>
+                        <div id="rock6" class="rockSmall"></div>
+                        <div id="rock7" class="rock"></div>
+                        <div id="rock8" class="rock"></div>
+                        <div id="rock11" class="rock"></div>
+                        <div id="rock27" class="rockBase"></div>
+                        <div id="rock28" class="rockBase"></div>
+                    </div>
+                    <div id="rocks4" class="rocks1">
+                        <div id="rock1" class="rock"></div>
+                        <div id="rock2" class="rock"></div>
+                        <div id="rock6" class="rockSmall"></div>
+                        <div id="rock7" class="rock"></div>
+                        <div id="rock8" class="rock"></div>
+                        <div id="rock11" class="rock"></div>
+                    </div>
+
+                </div>
+                <div class="log">
+
+
+
+
+
+
+
+                </div>
+                <div class="trees">
+                    <div class="trees1">
+
+
+
+
+
+                    </div>
+                    <div class="trees2">
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="trees3">
+
+
+
+
+
+
+
+                    </div>
+                    <div class="trees4">
+
+
+
+
+
+
+
+                    </div>
+                    <div class="trees5">
+
+
+
+
+
+
+                    </div>
+                    <div class="trees6">
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="trees7">
+
+
+
+
+
+
+
+                    </div>
+                    <div class="trees8">
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="ocean">
+
+
+                </div>

@@ -8,7 +8,6 @@ body {
 }
 
 .container {
-    height: 0;
     position: relative;
 }
 
@@ -285,16 +284,258 @@ body {
     animation-delay: 0s;
 }
 
-/* rocks */
+/* bubble animations */
+
+html {
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.environment {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    border: none;
+    margin: -2%;
+    margin-bottom: -10%;
+    padding: 0;
+    z-index: 50;
+    background-color: transparent;
+}
+
+symbol {
+    z-index: 50;
+}
+
+path {
+    z-index: 50;
+}
+
+rect {
+    z-index: 10;
+}
+
+.sky {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 8% 0 0% 0;
+    margin: 0;
+    background-color: #57c3ef;
+    z-index: 11;
+}
+
+.beach {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 10% 0 0 0;
+    margin: 0;
+    background-color: #f5f2d1;
+    z-index: 10;
+}
+
+.underwater {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 17% 0 0% 0;
+    margin: 0;
+    background-color: #365165;
+    z-index: 10;
+}
+
+.ocean {
+    position: relative;
+    align-items: flex-end;
+    padding: 0;
+    overflow: hidden;
+    z-index: 99999;
+    width: 115%;
+    margin-left: -47%;
+    margin-top: 3%;
+}
 
 #rockbed {
+    align-items: flex-end;
     position: relative;
-    top: 75vh;
-    left: -3.5vh;
     width: 100%;
     z-index: 70;
-    transform: translate(0px, -10vh);
+    min-height: 100%;
+    transform: translate(-10vh, -32vh);
 }
+
+.sceneContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+    position: fixed;
+    margin-left: 1.5%;
+}
+
+.water__wave-front, .water__wave-back {
+    width: 100%;
+    animation: movingWater;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    left: -1%;
+    top: -5%;
+    fill: #f5f2d1;
+    opacity: 1;
+    z-index: 50;
+    background-color: transparent;
+}
+
+.water__wave-back {
+    animation-delay: 200ms;
+    animation-direction: reverse;
+    animation-duration: 10s;
+    fill: #7abcdb;
+    top: 37%;
+    opacity: 1;
+}
+
+.water__wave-front--fill {
+    background-image: linear-gradient(to top, #365165, #537c9b);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 4044px;
+    height: 34%;
+    z-index: 30;
+    background-color: transparent;
+}
+
+.water__wave-back--fill {
+    background-image: linear-gradient(to top, #7abcdb, #7abcdb);
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    width: 100%;
+    height: 57%;
+    z-index: 30;
+    padding-top: 1.5%;
+    background-color: transparent;
+}
+
+.uwAnimals {
+    margin-bottom: 5%;
+    transform: translate(0px, 65vh);
+    z-index: 100;
+}
+
+.log {
+    width: 30vh;
+    transform: translate(55vh, 0vh);
+    z-index: 100;
+}
+
+.trees {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 99990;
+    transform: translate(0vh, 2vh);
+}
+
+.tree {
+    padding: 0 2% 0 2%;
+    width: 8%;
+}
+
+.divSalmon {
+    margin-left: 2%;
+    margin-top: -1.5%;
+    z-index: 99999;
+    width: 100%;
+}
+
+#divSalmon {
+    width: 8%;
+    transform: translate(0vh, -25vh);
+    z-index: 99999;
+}
+
+.crab {
+    width: 10%;
+    z-index: 98999;
+    align-items: center;
+    transform: translate(10vh, -5vh);
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.woodSign {
+    width: 12%;
+    transform: translate(5vh, -15vh);
+    z-index: 99898;
+}
+
+.signWords {
+    color: #E8B08B;
+    z-index: 99999;
+    font-family: 'Finger Paint', cursive;
+    line-height: 1.8em;
+    font-size: 1.5rem;
+    transform: rotate(-3deg) translate(-8.5vh, -16.5vh);
+}
+
+a:link, a:visited {
+    color: #E8B08B;
+    text-decoration: none;
+}
+
+.divSalmon3 {
+    transform: translate(-2vh, -6vh);
+    animation: wobble3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 99999;
+}
+
+.divSalmon4 {
+    transform: translate(2vh, -3vh);
+    animation: wobble4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 99999;
+}
+
+.divSalmon5 {
+    transform: translate(0vh, -5vh);
+    animation: wobble5;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 99999;
+}
+
+.divSalmon6 {
+    opacity: 0;
+    transform: translate(5vh, -5vh);
+    animation: jumpOutWater;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 99999;
+}
+
+/* rocks */
 
 .rocks {
     position: absolute;
@@ -555,232 +796,6 @@ clip-path: polygon(77% 58%, 43% 67%, 71% 41%, 85% 45%, 100% 67%, 100% 100%, 30% 
 
 path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450 300 Q 400 350 350 300 Q 300 350 250 300 Q 200 350 150 300 Q 100 350 50 300 
 */
-
-/* bubble animations */
-
-html {
-    height: 100%;
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-
-.environment {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border: none;
-    margin: -2%;
-    margin-bottom: -10%;
-    padding: 0;
-    z-index: 50;
-    background-color: transparent;
-    transform: translate(0px, -117vh);
-}
-
-symbol {
-    z-index: 50;
-}
-
-path {
-    z-index: 50;
-}
-
-rect {
-    z-index: 10;
-}
-
-.sky {
-    display: flex;
-    width: 100%;
-    height: 56vh;
-    flex-grow: 1;
-    margin: 0;
-    padding: 0;
-    background-color: #57c3ef;
-    z-index: 10;
-    overflow: hidden;
-    transform: translate(0px, -80vh);
-}
-
-.beach {
-    display: relative;
-    width: 100%;
-    height: 30vh;
-    margin: -2%;
-    padding: 0;
-    background-color: #f5f2d1;
-    z-index: 10;
-    overflow: hidden;
-    transform: translate(0px, -83vh);
-    margin-top: -5%;
-}
-
-.ocean {
-    bottom: 25%;
-    padding: 0;
-    transform: translate(0px, -5vh);
-    overflow: hidden;
-    margin: 0.5%;
-    margin-left: -2%;
-    z-index: 50;
-}
-
-.sceneContainer {
-    background-color: #365165;
-    z-index: 1;
-    margin-left: -2%;
-}
-
-.water__wave-front, .water__wave-back {
-    width: 100%;
-    animation: movingWater;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    position: absolute;
-    left: -1%;
-    top: -5%;
-    fill: #f5f2d1;
-    opacity: 1;
-    z-index: 50;
-    background-color: transparent;
-}
-
-.water__wave-back {
-    animation-delay: 200ms;
-    animation-direction: reverse;
-    animation-duration: 10s;
-    fill: #7abcdb;
-    top: 37%;
-    opacity: 1;
-}
-
-.water__wave-front--fill {
-    background-image: linear-gradient(to top, #365165, #537c9b);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 4044px;
-    height: 34%;
-    z-index: 30;
-    background-color: transparent;
-}
-
-.water__wave-back--fill {
-    background-image: linear-gradient(to top, #7abcdb, #7abcdb);
-    position: absolute;
-    bottom: 3%;
-    left: 0;
-    width: 100%;
-    height: 57%;
-    z-index: 30;
-    padding-top: 1.5%;
-    background-color: transparent;
-}
-
-.underwater1 {
-    background-color: #365165;
-    margin: -2%;
-    padding: 0;
-    transform: translate(0px, -10vh);
-    z-index: 0;
-}
-
-.uwAnimals {
-    margin-bottom: 5%;
-    transform: translate(0px, 65vh);
-    z-index: 100;
-}
-
-.log {
-    width: 30vh;
-    transform: translate(115vh, 30vh);
-    z-index: 100;
-}
-
-.trees {
-    display: flex;
-    flex-wrap: nowrap;
-    max-width: 150vh;
-    transform: translate(15vh, -9vh);
-    z-index: 99990;
-}
-
-.divSalmon {
-    width: 10%;
-    margin-left: 2%;
-    margin-top: -1.5%;
-    z-index: 99000;
-}
-
-#divSalmon {
-    transform: translate(0vh, -72vh);
-}
-
-.crab {
-    width: 45%;
-    margin-left: 5%;
-    transform: translate(20vh, -18vh);
-    z-index: 98999;
-}
-
-.woodSign {
-    width: 12%;
-    transform: translate(5vh, -72vh);
-    z-index: 99899;
-}
-
-.signWords {
-    color: #E8B08B;
-    z-index: 99900;
-    font-family: 'Finger Paint', cursive;
-    line-height: 2.35em;
-    font-size: 1.5rem;
-    transform: rotate(-3deg) translate(14.5vh, -98.25vh);
-}
-
-a:link, a:visited {
-    color: #E8B08B;
-    text-decoration: none;
-}
-
-.divSalmon3 {
-    transform: translate(-2vh, -6vh);
-    animation: wobble3;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    z-index: 99000;
-}
-
-.divSalmon4 {
-    transform: translate(2vh, -3vh);
-    animation: wobble4;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    z-index: 99000;
-}
-
-.divSalmon5 {
-    transform: translate(0vh, -5vh);
-    animation: wobble5;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    z-index: 99000;
-}
-
-.divSalmon6 {
-    opacity: 0;
-    transform: translate(5vh, -5vh);
-    animation: jumpOutWater;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    z-index: 99100;
-}
 
 .devdetails {
     display: flex;
@@ -1050,11 +1065,11 @@ a:link, a:visited {
     }
     90% {
         opacity: 1;
-        transform: rotate(20deg) translateX(200vh) translateY(-15vh);
+        transform: rotate(-5deg) translateX(220vh) translateY(-15vh);
     }
     98% {
         opacity: 0;
-        transform: rotate(0deg) translateX(700vh) translateY(30vh);
+        transform: translateX(300vh) translateY(-15vh);
     }
 }
 
