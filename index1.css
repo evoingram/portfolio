@@ -334,10 +334,12 @@ rect {
 
 .beach {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
     padding: 10% 0 0 0;
-    margin: 0;
+    margin: -5% 0 -5% 0;
+    max-height: 35%;
     background-color: #f5f2d1;
     z-index: 10;
 }
@@ -351,6 +353,13 @@ rect {
     margin: 0;
     background-color: #365165;
     z-index: 10;
+    transform: translate(0vh, -23vh);
+}
+
+.topHalf {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    max-height: 35%;
 }
 
 .ocean {
@@ -360,8 +369,7 @@ rect {
     overflow: hidden;
     z-index: 99999;
     width: 115%;
-    margin-left: -47%;
-    margin-top: 4%;
+    transform: translate(0, -25vh);
 }
 
 #rockbed {
@@ -391,7 +399,7 @@ rect {
     animation-timing-function: linear;
     position: absolute;
     left: -1%;
-    top: -5%;
+    top: 12%;
     fill: #f5f2d1;
     opacity: 1;
     z-index: 50;
@@ -403,7 +411,7 @@ rect {
     animation-direction: reverse;
     animation-duration: 10s;
     fill: #7abcdb;
-    top: 37%;
+    top: 48%;
     opacity: 1;
 }
 
@@ -438,7 +446,7 @@ rect {
 
 .log {
     width: 30vh;
-    transform: translate(55vh, 0vh);
+    transform: translate(95vh, -50vh);
     z-index: 100;
 }
 
@@ -605,17 +613,17 @@ rect {
 }
 
 .crab {
-    width: 10%;
+    width: 25%;
     z-index: 98999;
     align-items: center;
-    transform: translate(10vh, -5vh);
+    transform: translate(30vh, -35vh);
     margin: 0;
     padding: 0;
     background-color: transparent;
 }
 
 .woodSign {
-    width: 12%;
+    width: 25%;
     transform: translate(5vh, -12vh);
     z-index: 99898;
 }
@@ -626,7 +634,18 @@ rect {
     font-family: 'Finger Paint', cursive;
     line-height: 1.8em;
     font-size: 1.5rem;
-    transform: rotate(-3deg) translate(-8.5vh, -13vh);
+    transform: rotate(-3deg) translate(10vh, -34vh);
+}
+
+.sandWords {
+    color: #162605;
+    z-index: 99999;
+    font-family: 'Finger Paint', cursive;
+    line-height: 1.8em;
+    text-align: right;
+    width: 100%;
+    font-size: 1rem;
+    transform: translate(85vh, -10vh);
 }
 
 a:link, a:visited {
