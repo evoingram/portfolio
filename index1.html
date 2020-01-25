@@ -13,6 +13,7 @@
 
 <body>
     <div class="container">
+        <div class="sceneContainer" id="sceneContainer">&nbsp;</div>
         <div class="sceneContainer" id="sceneContainer">
             <div id="environment" class="environment">
                 <div class="sky" id="sky">&nbsp;
@@ -228,7 +229,7 @@
 
 
                     </div>
-                    <div class="trees">&nbsp;
+                    <div id="trees" class="trees treesDay">&nbsp;
                         <div class="trees01 tree">&nbsp;
                             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 364 456.34">
@@ -719,7 +720,7 @@
                 <div class="beach" id="beach">
                     <div class="topHalf" id="topHalf">
                         <div class="sandWords" id="sandWords">
-                            Welcome to Erica Ingram's portfolio. Click and hover to interact with this page.
+                            Welcome to Erica Ingram's portfolio. Click and hover to interact.
                         </div>
                         <div class="woodSign" id="woodSign">
 
@@ -1198,7 +1199,7 @@
 
                     <div class="ocean">
                         <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                            <symbol width="4044" viewBox="200 0 3500 175" id="water-waves"
+                            <symbol width="4044" viewBox="150 0 3500 160" id="water-waves"
                                 preserveAspectRatio="xMinYMin meet">
                                 <path
                                     d="M 50 50 
@@ -2011,6 +2012,7 @@
                             <div id="rock27" class="rockBase">&nbsp;</div>
                             <div id="rock28" class="rockBase">&nbsp;</div>
                         </div>
+                        <!--
                         <div id="rocks4" class="rocks1">
                             <div id="rock1" class="rock">&nbsp;</div>
                             <div id="rock2" class="rock">&nbsp;</div>
@@ -2019,7 +2021,7 @@
                             <div id="rock8" class="rock">&nbsp;</div>
                             <div id="rock11" class="rock">&nbsp;</div>
                         </div>
-
+-->
                     </div>
                 </div>
                 <div id="resume" class="popup">
@@ -2309,8 +2311,11 @@ master.add(moveFishes);
         let day = document.getElementById("day");
         let night = document.getElementById("night");
         let stars = document.getElementById("stars");
+        let trees = document.getElementById("trees");
         day.classList.toggle("hide");
         day.classList.toggle("show");
+        trees.classList.toggle("treesDay");
+        trees.classList.toggle("treesNight");
         night.classList.toggle("show");
         night.classList.toggle("hide");
         console.log("day div = " + day.classList);
