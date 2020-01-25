@@ -490,6 +490,7 @@ rect {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    transform: translate(0vh, 7vh);
 }
 
 .stars {
@@ -500,6 +501,7 @@ rect {
     margin-bottom: 3%;
     margin-right: 1%;
     margin-left: 04%;
+    transform: translate(0vh, 2vh);
 }
 
 .star {
@@ -513,6 +515,7 @@ rect {
     border-bottom: 9px solid #A5ACAF;
     border-left: 13px solid transparent;
     transform: rotate(35deg);
+    margin: 0 5% 0 5%;
 }
 
 .star:before {
@@ -988,9 +991,10 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
 
 .devdetails {
     display: flex;
-    width: 60%;
+    width: 75%;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    padding-top: 2%;
 }
 
 .codeItem {
@@ -1014,7 +1018,6 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
     transition: .64s ease-in-out;
     z-index: 99200;
     font-family: 'IM Fell English', serif;
-    font-size: 0.75rem;
 }
 
 .popup h2, .popup h3, .popup h4 {
@@ -1023,7 +1026,7 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
 }
 
 .popup h3, .popup h4 {
-    margin-left: 1rem;
+    margin-left: 1.25rem;
 }
 
 .popup-inner {
@@ -1079,7 +1082,7 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
 }
 
 .popuptext p {
-    font-size: .875rem;
+    font-size: 1rem;
     color: #162605;
     line-height: 1;
 }
@@ -1101,7 +1104,7 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
     transform: translateX(-50%) scaleX(0);
     transform-origin: 50% 50%;
     width: 100%;
-    height: 0.5px;
+    height: 1px;
     background-color: #162605;
     transition: transform 250ms;
 }
@@ -1136,6 +1139,44 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
     line-height: 3rem;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    align-self: center;
+    width: 95%;
+}
+
+.icon {
+    display: flex;
+    margin: 6%;
+    align-self: space-evenly;
+    color: transparent;
+    text-decoration: none;
+}
+
+.icon>a {
+    text-decoration: none;
+}
+
+.icon>a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 1px;
+    background-color: transparent;
+    transition: transform 250ms;
+    text-decoration: none;
+}
+
+.icon>a:hover::after {
+    background-color: transparent;
+    transform: translateX(-50%) scaleX(1);
     text-decoration: none;
 }
 
