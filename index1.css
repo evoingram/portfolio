@@ -390,7 +390,6 @@ rect {
 .sceneContainer {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
     height: 80%;
     background-color: transparent;
     z-index: 1;
@@ -398,6 +397,7 @@ rect {
     margin-left: 10%;
     margin-top: 5%;
     border: 12px #311903 ridge;
+    min-width: 950px;
     max-width: 950px;
 }
 
@@ -629,14 +629,15 @@ rect {
 }
 
 .divSalmon {
+    position: relative;
     margin-left: 2%;
     margin-top: -1.5%;
     z-index: 20;
-    width: 100%;
+    width: 10%;
 }
 
-#divSalmon {
-    width: 9%;
+#divSalmonHolder {
+    width: 960px;
     position: relative;
     transform: translate(0vh, 0vh);
     z-index: 50;
@@ -1149,17 +1150,17 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
 
 @keyframes wobble3 {
     25% {
-        transform: translateX(20vh) translateY(-15%);
+        transform: translateX(175px) translateY(-15%);
         opacity: 1;
         z-index: 20;
     }
     50% {
-        transform: translateX(40vh) translateY(20%);
+        transform: translateX(450px) translateY(20%);
         opacity: 1;
         z-index: 20;
     }
     75% {
-        transform: translateX(60vh) translateY(-15%);
+        transform: translateX(625px) translateY(-15%);
         opacity: 1;
         z-index: 20;
     }
@@ -1168,12 +1169,12 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
         z-index: 0;
     }
     80% {
-        transform: translateX(80vh) translateY(20%);
+        transform: translateX(825px) translateY(20%);
         opacity: 0;
         z-index: 1;
     }
     100% {
-        transform: translateX(100vh) translateY(20%);
+        transform: translateX(960px) translateY(20%);
         opacity: 0;
         z-index: 1;
     }
@@ -1181,72 +1182,81 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
 
 @keyframes wobble4 {
     25% {
-        transform: translateX(20vh) translateY(-20%);
+        transform: translateX(200px) translateY(-20%);
         opacity: 1;
     }
     50% {
-        transform: translateX(40vh) translateY(10%);
+        transform: translateX(400px) translateY(10%);
         opacity: 1;
     }
     75% {
-        transform: translateX(60vh) translateY(-20%);
+        transform: translateX(600px) translateY(-20%);
         opacity: 1;
     }
     85% {
         opacity: 1;
     }
     86% {
-        transform: translateX(80vh) translateY(20%);
+        transform: translateX(800px) translateY(20%);
         opacity: 0;
     }
     100% {
-        transform: translateX(100vh) translateY(10%);
+        transform: translateX(960px) translateY(10%);
         opacity: 0;
     }
 }
 
 @keyframes wobble5 {
     25% {
-        transform: translateX(25vh) translateY(-10%);
+        transform: translateX(250px) translateY(-10%);
         opacity: 1;
     }
     50% {
-        transform: translateX(45vh) translateY(15%);
+        transform: translateX(450px) translateY(15%);
         opacity: 1;
     }
     75% {
-        transform: translateX(65vh) translateY(-10%);
+        transform: translateX(650px) translateY(-10%);
         opacity: 1;
     }
     85% {
         opacity: 1;
     }
     86% {
-        transform: translateX(85vh) translateY(20%);
+        transform: translateX(850px) translateY(20%);
         opacity: 0;
     }
     100% {
-        transform: translateX(100vh) translateY(15%);
+        transform: translateX(960px) translateY(15%);
         opacity: 0;
     }
 }
 
 @keyframes wobble6 {
     25% {
-        transform: translateX(50vh) translateY(-30vh);
+        transform: translateX(100px) translateY(-30vh);
     }
     50% {
-        transform: translateX(85vh) translateY(-20vh);
+        transform: translateX(350px) translateY(-20vh);
     }
     75% {
-        transform: translateX(115vh) translateY(-30vh);
+        transform: translateX(550px) translateY(-30vh);
     }
     90% {
-        transform: translateX(130vh) translateY(20%);
+        transform: translateX(700px) translateY(20%);
         opacity: 0;
     }
+    95% {
+        opacity: 1;
+        z-index: 1;
+    }
+    96% {
+        opacity: 0;
+        transform: translateX(825px) translateY(-10vh);
+        z-index: 1;
+    }
     100% {
-        transform: translateX(145vh) translateY(-20vh);
+        transform: translateX(960vh) translateY(-20vh);
         opacity: 0;
     }
 }
@@ -1283,34 +1293,37 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
     /* transform: translate(15vh, -15vh);*/
     0% {
         opacity: 1;
-        transform: translate(0vh, -15vh);
+        transform: translate(0px, -15vh);
     }
     10% {
         opacity: 1;
-        transform: translate(15vh, -15vh);
+        transform: translate(150px, -15vh);
     }
     25% {
         opacity: 1;
-        transform: rotate(-40deg) translateX(45vh) translateY(-20vh);
+        transform: rotate(-40deg) translateX(350px) translateY(-20vh);
     }
     50% {
         opacity: 1;
-        transform: rotate(-20deg) translateX(65vh) translateY(-20vh);
+        transform: rotate(-20deg) translateX(550px) translateY(-20vh);
     }
     70% {
         opacity: 1;
-        transform: rotate(0deg) translateX(90vh) translateY(-15vh);
+        transform: rotate(0deg) translateX(700px) translateY(-15vh);
     }
-    90% {
+    95% {
         opacity: 1;
-        transform: rotate(-5deg) translateX(110vh) translateY(-15vh);
+        z-index: 1;
     }
-    97% {
-        opacity: 1;
+    96% {
+        opacity: 0;
+        transform: rotate(-5deg) translateX(825px) translateY(-10vh);
+        z-index: 1;
     }
     98% {
         opacity: 0;
-        transform: translateX(120vh) translateY(-15vh);
+        transform: translateX(960px) translateY(-10vh);
+        z-index: 1;
     }
 }
 
