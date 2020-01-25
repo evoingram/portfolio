@@ -403,6 +403,7 @@ rect {
 
 #water-waves {
     transform: translate(0vh, -5vh);
+    width: 4044px;
 }
 
 .water__wave-front, .water__wave-back {
@@ -1022,6 +1023,7 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
     flex-wrap: nowrap;
     justify-content: space-evenly;
     padding-top: 2%;
+    margin-left: 8%;
 }
 
 .codeItem {
