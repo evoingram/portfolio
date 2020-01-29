@@ -497,7 +497,7 @@ rect {
 
 @-moz-document url-prefix() {
 	.water__wave-front, .water__wave-back {
-		top: 19.5%;
+		top: 19%;
 	}
 	.water__wave-back {
 		top: 55.5%;
@@ -546,6 +546,13 @@ rect {
 	z-index: 100;
 }
 
+@-moz-document url-prefix() {
+	.log {
+		-webkit-transform: translate(625px, -165px);
+		transform: translate(625px, -165px);
+	}
+}
+
 .day {
 	width: 13%;
 	-webkit-box-align: start;
@@ -591,6 +598,16 @@ rect {
 	width: 270px;
 	-webkit-transform: translate(625px, 50px);
 	transform: translate(625px, 50px);
+}
+
+.moon {
+	width: 10%;
+}
+
+.hiddenMobilePara {
+	display: none;
+	width: 0;
+	height: 0;
 }
 
 .moonStars {
@@ -819,12 +836,6 @@ rect {
 	z-index: 99898;
 }
 
-@-moz-document url-prefix() {
-	.woodSign {
-		width: 80%;
-	}
-}
-
 .signWords {
 	position: relative;
 	color: #e8b08b;
@@ -835,6 +846,23 @@ rect {
 	-moz-transform: translate(75px, -65px) rotate(-3deg);
 	-webkit-transform: rotate(-3deg) translate(65px, -60px);
 	transform: rotate(-3deg) translate(65px, -60px);
+}
+
+@-moz-document url-prefix() {
+	.woodSign {
+		width: 80%;
+	}
+	.signWords {
+		position: relative;
+		color: #e8b08b;
+		z-index: 99999;
+		font-family: 'Finger Paint', cursive;
+		line-height: 1.6em;
+		font-size: 1.25rem;
+		-moz-transform: translate(75px, -65px) rotate(-3deg);
+		-webkit-transform: rotate(-3deg) translate(65px, -60px);
+		transform: rotate(-3deg) translate(65px, -60px);
+	}
 }
 
 .sandWords {
