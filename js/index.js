@@ -29,7 +29,7 @@ function replaceCloudText(hoverItem) {
 	} else if (hoverItem === 'sign') {
 		caption.textContent = 'All facts from Wikipedia or official ONP website.';
 	} else {
-		caption.textContent = 'All images, flora, & fauna from Olympic N.P.';
+		caption.textContent = 'All images, flora, & fauna from Olympic National Park';
 	}
 }
 
@@ -38,12 +38,15 @@ function toggleDayNight() {
 	let night = document.getElementById('night');
 	let stars = document.getElementById('stars');
 	let trees = document.getElementById('trees');
+	let caption = document.getElementById('caption');
 	day.classList.toggle('hide');
 	day.classList.toggle('show');
 	trees.classList.toggle('treesDay');
 	trees.classList.toggle('treesNight');
 	night.classList.toggle('show');
 	night.classList.toggle('hide');
+	caption.classList.toggle('captionNight');
+	caption.classList.toggle('captionDay');
 	if (day.classList.contains('show')) {
 		document.getElementById('sky').style.backgroundColor = '#57c3ef';
 	}
