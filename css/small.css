@@ -439,7 +439,7 @@
         background-color: transparent;
     }
     .water__wave-front {
-        top: -2%;
+        top: 0.1%;
     }
     .water__wave-back {
         -webkit-animation-delay: 200ms;
@@ -453,7 +453,7 @@
     }
     @-moz-document url-prefix() {
         .water__wave-front, .water__wave-back {
-            top: 18%;
+            top: 22.5%;
         }
         .water__wave-back {
             top: 55.5%;
