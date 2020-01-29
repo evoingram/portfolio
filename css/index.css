@@ -590,14 +590,14 @@ rect {
 	transform: translate(550px, 05px);
 }
 
-#caption {
+.caption {
 	font-family: 'Finger Paint', cursive;
 	color: #4b3f2f;
 	position: fixed;
 	z-index: 90001;
-	width: 270px;
-	-webkit-transform: translate(625px, 50px);
-	transform: translate(625px, 50px);
+	width: 255px;
+	-webkit-transform: translate(625px, 60px);
+	transform: translate(625px, 60px);
 }
 
 .moon {

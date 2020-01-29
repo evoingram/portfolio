@@ -523,25 +523,28 @@
         transform: translate(0vh, -9vh);
     }
     #cloud1 {
-        position: fixed;
-        width: 205px;
-        z-index: 90000;
-        -webkit-transform: translate(280px, 05px);
-        transform: translate(280px, 05px);
+        display: none;
+        width: 0;
+        height: 0;
     }
     #cloud2 {
         display: none;
         width: 0;
         height: 0;
     }
-    #caption {
+    .caption {
         font-family: 'Finger Paint', cursive;
-        color: #4b3f2f;
         position: fixed;
         z-index: 90001;
-        width: 270px;
-        -webkit-transform: translate(625px, 50px);
-        transform: translate(625px, 50px);
+        width: 255px;
+        -webkit-transform: translate(205px, 70px);
+        transform: translate(205px, 70px);
+    }
+    .captionNight {
+        color: #a5acaf;
+    }
+    .captionDay {
+        color: #4b3f2f;
     }
     .moonStars {
         display: -webkit-box;
