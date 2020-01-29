@@ -473,7 +473,7 @@ rect {
 	animation-timing-function: linear;
 	position: absolute;
 	left: -1%;
-	top: 11%;
+	top: 12%;
 	fill: #f5f2d1;
 	opacity: 1;
 	z-index: 50;
@@ -481,7 +481,7 @@ rect {
 }
 
 .water__wave-front {
-	top: -2%;
+	top: -3%;
 }
 
 .water__wave-back {
@@ -491,13 +491,13 @@ rect {
 	-webkit-animation-duration: 10s;
 	animation-duration: 10s;
 	fill: #7abcdb;
-	top: 34%;
+	top: 33%;
 	opacity: 1;
 }
 
 @-moz-document url-prefix() {
 	.water__wave-front, .water__wave-back {
-		top: 19%;
+		top: 20%;
 	}
 	.water__wave-back {
 		top: 55.5%;
