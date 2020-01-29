@@ -1,4 +1,4 @@
-# portfolio (in progress)
+# portfolio
 
 https://www.ericaingram.com
 <br><br>
