@@ -332,8 +332,8 @@ html {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	flex-direction: row;
-	width: 100%;
-	min-height: 100%;
+	min-width: 950px;
+	max-width: 950px;
 	height: 960px;
 	max-height: 960px;
 	padding: 0;
@@ -358,8 +358,8 @@ rect {
 	display: -webkit-box;
 	display: flex;
 	flex-wrap: wrap;
-	position: absolute;
-	width: 100%;
+	position: fixed;
+	width: 950px;
 	height: 175px;
 	padding: 0% 0 0% 0;
 	margin: 0;
@@ -371,30 +371,31 @@ rect {
 	display: -webkit-flex;
 	display: flex;
 	flex-wrap: wrap;
-	position: absolute;
-	width: 100%;
+	position: fixed;
+	width: 950px;
 	padding: 0% 0 0 0;
-	margin: 0% 0 -0% 0;
+	margin: 0% 0 0% 0;
 	height: 461px;
 	background-color: #f5f2d1;
 	z-index: 10;
-	-webkit-transform: translate(0vh, 13vh);
-	transform: translate(0vh, 13vh);
+	-webkit-transform: translate(0vh, 112px);
+	transform: translate(0vh, 112px);
 }
 
 .underwater {
 	display: -webkit-box;
 	display: flex;
+	align-self: flex-end;
 	flex-wrap: wrap;
-	position: static;
-	width: 100%;
+	position: fixed;
+	width: 950px;
 	margin-top: 0;
 	background-color: #365165;
 	z-index: 10;
 	height: 200px;
 	max-height: 200px;
-	-webkit-transform: translate(0vh, 57.5vh);
-	transform: translate(0vh, 57.5vh);
+	-webkit-transform: translate(0vh, -252px);
+	transform: translate(0vh, -252px);
 }
 
 .topHalf {
@@ -402,7 +403,7 @@ rect {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	flex-direction: row;
-	max-height: 35%;
+	max-height: 162px;
 	max-width: 265px;
 }
 
@@ -415,9 +416,9 @@ rect {
 	padding: 0;
 	overflow: hidden;
 	z-index: 99999;
-	width: 100%;
-	-webkit-transform: translate(0, -5vh);
-	transform: translate(0, -5vh);
+	width: 950px;
+	-webkit-transform: translate(0, -40px);
+	transform: translate(0, -40px);
 	background-color: transparent;
 }
 
@@ -441,6 +442,7 @@ rect {
 	display: flex;
 	flex-wrap: wrap;
 	height: 80%;
+	min-height: 707px;
 	max-height: 707px;
 	background-color: transparent;
 	z-index: 1;
@@ -454,13 +456,13 @@ rect {
 
 #water-waves {
 	-moz-transform: translate(0vh, -15vh);
-	-webkit-transform: translate(0vh, -5vh);
-	transform: translate(0vh, -5vh);
+	-webkit-transform: translate(0vh, -50px);
+	transform: translate(0vh, -50px);
 	width: 4044px;
 }
 
 .water__wave-front, .water__wave-back {
-	width: 150%;
+	width: 1425px;
 	-webkit-animation: movingWater;
 	animation: movingWater;
 	-webkit-animation-duration: 5s;
@@ -471,7 +473,7 @@ rect {
 	animation-timing-function: linear;
 	position: absolute;
 	left: -1%;
-	top: 12%;
+	top: 11%;
 	fill: #f5f2d1;
 	opacity: 1;
 	z-index: 50;
@@ -479,7 +481,7 @@ rect {
 }
 
 .water__wave-front {
-	top: -1%;
+	top: -2%;
 }
 
 .water__wave-back {
@@ -489,7 +491,7 @@ rect {
 	-webkit-animation-duration: 10s;
 	animation-duration: 10s;
 	fill: #7abcdb;
-	top: 35%;
+	top: 34%;
 	opacity: 1;
 }
 
@@ -537,20 +539,20 @@ rect {
 }
 
 .log {
-	position: relative;
-	width: 30vh;
-	-webkit-transform: translate(65vh, -22vh);
-	transform: translate(65vh, -22vh);
+	position: absolute;
+	width: 300px;
+	-webkit-transform: translate(625px, -135px);
+	transform: translate(625px, -135px);
 	z-index: 100;
 }
 
 .day {
-	width: 16%;
+	width: 13%;
 	-webkit-box-align: start;
 	align-items: flex-start;
 	z-index: 99990;
-	-webkit-transform: translate(0vh, -2vh);
-	transform: translate(0vh, -2vh);
+	-webkit-transform: translate(0vh, -30px);
+	transform: translate(0vh, -30px);
 }
 
 .night {
@@ -569,16 +571,16 @@ rect {
 	position: fixed;
 	width: 245px;
 	z-index: 90000;
-	-webkit-transform: translate(73vh, 0.5vh);
-	transform: translate(73vh, 0.5vh);
+	-webkit-transform: translate(680px, 05px);
+	transform: translate(680px, 05px);
 }
 
 #cloud2 {
 	position: fixed;
 	width: 245px;
 	z-index: 90000;
-	-webkit-transform: translate(60vh, 0.5vh);
-	transform: translate(60vh, 0.5vh);
+	-webkit-transform: translate(550px, 05px);
+	transform: translate(550px, 05px);
 }
 
 #caption {
@@ -586,9 +588,9 @@ rect {
 	color: #4b3f2f;
 	position: fixed;
 	z-index: 90001;
-	width: 21%;
-	-webkit-transform: translate(67vh, 5vh);
-	transform: translate(67vh, 5vh);
+	width: 270px;
+	-webkit-transform: translate(625px, 50px);
+	transform: translate(625px, 50px);
 }
 
 .moonStars {
@@ -749,8 +751,8 @@ rect {
 	align-items: flex-end;
 	width: 100%;
 	z-index: 99000;
-	-webkit-transform: translate(0vh, -9vh);
-	transform: translate(0vh, -9vh);
+	-webkit-transform: translate(0vh, -90px);
+	transform: translate(0vh, -90px);
 }
 
 .treesNight {
@@ -762,8 +764,8 @@ rect {
 	align-items: flex-end;
 	width: 100%;
 	z-index: 99000;
-	-webkit-transform: translate(0vh, -9.5vh);
-	transform: translate(0vh, -9.5vh);
+	-webkit-transform: translate(0vh, -95px);
+	transform: translate(0vh, -95px);
 }
 
 .tree {
@@ -788,12 +790,14 @@ rect {
 }
 
 .crab {
-	width: 60%;
+	width: 17%;
 	z-index: 98999;
 	-webkit-box-align: center;
 	align-items: center;
-	-webkit-transform: translate(25vh, -10vh);
-	transform: translate(25vh, -10vh);
+	position: absolute;
+	-webkit-transform: translate(175px, 50px);
+	transform: translate(175px, 50px);
+	bottom: 155px;
 	margin: 0;
 	padding: 0;
 	background-color: transparent;
@@ -808,10 +812,10 @@ rect {
 }
 
 .woodSign {
-	width: 50%;
+	width: 133%;
 	position: relative;
-	-webkit-transform: translate(5vh, 12vh);
-	transform: translate(5vh, 10.5vh);
+	-webkit-transform: translate(42px, 95px);
+	transform: translate(42px, 95px);
 	z-index: 99898;
 }
 
@@ -822,9 +826,9 @@ rect {
 	font-family: 'Finger Paint', cursive;
 	line-height: 1.6em;
 	font-size: 1.25rem;
-	-moz-transform: translate(7.5vh, -6.9vh) rotate(-3deg);
-	-webkit-transform: rotate(-3deg) translate(7.5vh, -6.9vh);
-	transform: rotate(-3deg) translate(7.5vh, -6.9vh);
+	-moz-transform: translate(75px, -65px) rotate(-3deg);
+	-webkit-transform: rotate(-3deg) translate(65px, -60px);
+	transform: rotate(-3deg) translate(65px, -60px);
 }
 
 .sandWords {
@@ -835,9 +839,9 @@ rect {
 	text-align: right;
 	width: 100%;
 	font-size: 1rem;
-	-webkit-transform: translate(-5vh, 24vh);
-	transform: translate(-5vh, 24vh);
-	position: fixed;
+	-webkit-transform: translate(-50px, 210px);
+	transform: translate(-50px, 210px);
+	position: absolute;
 }
 
 a:link, a:visited {

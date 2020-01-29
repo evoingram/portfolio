@@ -29,7 +29,7 @@ function replaceCloudText(hoverItem) {
 	} else if (hoverItem === 'sign') {
 		caption.textContent = 'All facts from Wikipedia or official ONP website.';
 	} else {
-		caption.textContent = 'All images, flora, & fauna from Olympic N.P.';
+		caption.textContent = 'All images, flora, & fauna from Olympic National Park';
 	}
 }
 
