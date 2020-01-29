@@ -491,11 +491,9 @@
         z-index: 100;
     }
     .log {
-        position: absolute;
-        width: 300px;
-        -webkit-transform: translate(625px, -135px);
-        transform: translate(625px, -135px);
-        z-index: 100;
+        display: none;
+        height: 0;
+        width: 0;
     }
     @-moz-document url-prefix() {
         .log {
