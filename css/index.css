@@ -473,7 +473,7 @@ rect {
 	animation-timing-function: linear;
 	position: absolute;
 	left: -1%;
-	top: 12%;
+	top: 11%;
 	fill: #f5f2d1;
 	opacity: 1;
 	z-index: 50;
@@ -481,7 +481,7 @@ rect {
 }
 
 .water__wave-front {
-	top: -3%;
+	top: -2.5%;
 }
 
 .water__wave-back {
@@ -491,16 +491,16 @@ rect {
 	-webkit-animation-duration: 10s;
 	animation-duration: 10s;
 	fill: #7abcdb;
-	top: 33%;
+	top: 35%;
 	opacity: 1;
 }
 
 @-moz-document url-prefix() {
 	.water__wave-front, .water__wave-back {
-		top: 20%;
+		top: 19%;
 	}
 	.water__wave-back {
-		top: 55.5%;
+		top: 56%;
 	}
 }
 
@@ -511,7 +511,7 @@ rect {
 	bottom: 0;
 	left: 0;
 	width: 3500px;
-	height: 34%;
+	height: 33%;
 	z-index: 30;
 	background-color: transparent;
 	-webkit-transform: translate(0px, -2.5vh);
