@@ -497,10 +497,10 @@ rect {
 
 @-moz-document url-prefix() {
 	.water__wave-front, .water__wave-back {
-		top: 19%;
+		top: 20%;
 	}
 	.water__wave-back {
-		top: 56%;
+		top: 57.5%;
 	}
 }
 
