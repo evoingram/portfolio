@@ -616,6 +616,25 @@ rect {
 	height: 100%;
 }
 
+#browserSupport {
+	display: flex;
+	width: 100%;
+	align-self: center;
+	justify-content: center;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-family: 'IM Fell English', serif;
+	margin-bottom: 2%;
+}
+
+.browserPara {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	text-align: center;
+}
+
 .moonStars {
 	display: -webkit-box;
 	display: flex;
