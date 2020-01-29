@@ -1185,9 +1185,9 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
         display: flex;
         -webkit-box-align: center;
         align-items: center;
-        width: 500px;
         height: 600px;
-        max-width: 590px;
+        min-width: 575px;
+        max-width: 575px;
         max-height: 600px;
         background-color: #f5f2d1;
         -webkit-transform: rotate(32deg);
@@ -1220,7 +1220,7 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
         flex-direction: column;
         -webkit-box-pack: center;
         justify-content: center;
-        width: 500px;
+        width: 575px;
         height: 95%;
         padding: 0.25rem;
         padding-left: 1rem;
@@ -1343,6 +1343,11 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
         -webkit-transform: translateX(-50%) scaleX(1);
         transform: translateX(-50%) scaleX(1);
         text-decoration: none;
+    }
+    .hiddenRegularPara {
+        display: none;
+        width: 0;
+        height: 0;
     }
     @-webkit-keyframes wobble {
         33% {
@@ -1843,5 +1848,3 @@ go back to normal swimming
 
 */
 }
-
-200px

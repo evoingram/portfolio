@@ -447,7 +447,7 @@ rect {
 	background-color: transparent;
 	z-index: 1;
 	position: fixed;
-	margin-left: 10%;
+	margin-left: 5%;
 	margin-top: 5%;
 	border: 12px #311903 ridge;
 	min-width: 950px;
@@ -608,6 +608,12 @@ rect {
 	display: none;
 	width: 0;
 	height: 0;
+}
+
+.hiddenRegularPara {
+	display: flex;
+	width: 100%;
+	height: 100%;
 }
 
 .moonStars {
@@ -1296,10 +1302,11 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
-	max-width: 800px;
-	max-height: 600px;
 	width: 60%;
 	height: 80%;
+	min-width: 625px;
+	max-width: 625px;
+	max-height: 600px;
 	background-color: #f5f2d1;
 	-webkit-transform: rotate(32deg);
 	transform: rotate(32deg);
@@ -1429,7 +1436,7 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
 .icon {
 	display: -webkit-box;
 	display: flex;
-	margin: 6%;
+	margin: 4%;
 	align-self: space-evenly;
 	color: transparent;
 	text-decoration: none;
