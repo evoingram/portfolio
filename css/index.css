@@ -1450,6 +1450,7 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
 	display: flex;
 	align-self: center;
 	width: 95%;
+	color: transparent;
 }
 
 .icon {
@@ -1488,6 +1489,20 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
 	background-color: transparent;
 	-webkit-transform: translateX(-50%) scaleX(1);
 	transform: translateX(-50%) scaleX(1);
+	text-decoration: none;
+}
+
+.icons>h2 {
+	color: #162605;
+}
+
+.icons>a:after {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.icons>a:hover::after {
+	background-color: transparent;
 	text-decoration: none;
 }
 
