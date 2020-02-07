@@ -12,6 +12,31 @@ onmouseover="replaceCloudText('')" onmouseleave="replaceCloudText('default')"
                         onmouseleave="replaceCloudText('default')"
 */
 
+function expandCollapse(id) {
+	let sectionToToggle = document.getElementById('project' + id);
+	sectionToToggle.classList.toggle('hide');
+	sectionToToggle.classList.toggle('show');
+	let expandCollapseText = document.getElementById('showHide' + id);
+	let topBorder = document.getElementById('h3border' + id);
+	if (sectionToToggle.classList.contains('hide')) {
+		expandCollapseText.style.borderTop = '3px solid #c8b488';
+		expandCollapseText.style.marginBottom = '10%';
+		expandCollapseText.textContent = 'click to expand';
+	} else {
+		expandCollapseText.style.marginBottom = '10%';
+		expandCollapseText.textContent = 'click to collapse';
+	}
+	let paragraphsToToggle = document.querySelectorAll('.paragraph' + id);
+	for (let x = 0; x < paragraphsToToggle.length; x++) {
+		paragraphsToToggle[x].classList.toggle('hide');
+		paragraphsToToggle[x].classList.toggle('show');
+	}
+	/*
+	if 
+
+	*/
+}
+
 function replaceCloudText(hoverItem) {
 	let caption = document.getElementById('caption');
 	if (hoverItem === 'sun') {
