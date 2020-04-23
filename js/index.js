@@ -10,6 +10,17 @@
 onmouseover="replaceCloudText('')" onmouseleave="replaceCloudText('default')" 
  onmouseover="replaceCloudText('salmon')"
                         onmouseleave="replaceCloudText('default')"
+function overlayOn() {
+	document.getElementById('overlay1').style.display = 'block';
+	document.getElementById('overlay1').style.zIndex = '5';
+	console.log('overlay on running');
+}
+
+function overlayOff() {
+	document.getElementById('overlay1').style.display = 'none';
+	document.getElementById('overlay1').style.zIndex = '2';
+	console.log('overlay off running');
+}
 */
 
 function expandCollapse(id) {
