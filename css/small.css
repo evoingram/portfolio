@@ -1845,4 +1845,17 @@ come back down
 go back to normal swimming 
 
 */
+    .flex-pair {
+        max-width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .flex-item {
+        max-width: 80%;
+        flex-wrap: wrap;
+    }
+
+    #cortanaBot{
+        margin-top: 35%;
+    }
 }
