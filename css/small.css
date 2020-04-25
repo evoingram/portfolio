@@ -1347,6 +1347,21 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
         width: 0;
         height: 0;
     }
+    #hrbadges1 {
+        width: 80%;
+        text-decoration: none;
+        margin-left: -5%;
+    }
+    #hrbadges2 {
+        width: 80%;
+        text-decoration: none;
+        margin-left: 10%;
+    }
+    #hrheading {
+        margin-left: 10%;
+    }
+    #githubc {margin-left: 0%;}
+
     @-webkit-keyframes wobble {
         33% {
             -webkit-transform: translateX(-50px);
@@ -1845,4 +1860,16 @@ come back down
 go back to normal swimming 
 
 */
+    .flex-pair {
+        max-width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .flex-item {
+        max-width: 80%;
+        flex-wrap: wrap;
+    }
+    #cortanaBot {
+        margin-top: 35%;
+    }
 }
