@@ -1587,7 +1587,6 @@ i {
 }
 
 .clickable-container:hover {
-	cursor: pointer;
 	color: #0d720d;
 }
 
@@ -1668,6 +1667,10 @@ div.responsive-title {
 	align-items: space-between;
 	align-content: space-between;
 	align-self: space-between;
+}
+
+#githubc {
+	margin-left: 20%;
 }
 
 @-webkit-keyframes wobble {
