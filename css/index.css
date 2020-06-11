@@ -856,8 +856,8 @@ rect {
 .woodSign {
 	width: 133%;
 	position: relative;
-	-webkit-transform: translate(42px, 95px);
-	transform: translate(42px, 95px);
+	-webkit-transform: translate(42px, 92px);
+	transform: translate(42px, 92px);
 	z-index: 99898;
 }
 
