@@ -375,7 +375,7 @@ rect {
 	width: 950px;
 	padding: 0% 0 0 0;
 	margin: 0% 0 0% 0;
-	height: 462px;
+	height: 461px;
 	background-color: #f5f2d1;
 	z-index: 10;
 	-webkit-transform: translate(0vh, 112px);
@@ -405,7 +405,6 @@ rect {
 	flex-direction: row;
 	max-height: 162px;
 	max-width: 265px;
-	transform: translate(0, 0px);
 }
 
 .ocean {
@@ -874,17 +873,6 @@ rect {
 	transform: rotate(-3deg) translate(65px, -60px);
 }
 
-#logWords {
-	position: fixed;
-	color: #c59474;
-	z-index: 99999;
-	font-family: 'Finger Paint', cursive;
-	line-height: 1.6em;
-	font-size: 1rem;
-	width: 300px;
-	transform: rotate(6deg) translate(675px, 85px);
-}
-
 @-moz-document url-prefix() {
 	.woodSign {
 		width: 80%;
@@ -908,10 +896,10 @@ rect {
 	font-family: 'Finger Paint', cursive;
 	line-height: 1.8em;
 	text-align: right;
-	width: 250px;
+	width: 100%;
 	font-size: 1rem;
-	-webkit-transform: translate(475px, 200px);
-	transform: translate(475px, 200px);
+	-webkit-transform: translate(-50px, 210px);
+	transform: translate(-50px, 210px);
 	position: absolute;
 }
 
