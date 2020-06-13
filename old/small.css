@@ -804,11 +804,11 @@
         font-family: 'Finger Paint', cursive;
         line-height: 1.8em;
         text-align: right;
-        width: 250px;
+        width: 69%;
         padding-right: 1%;
         font-size: 1rem;
-        -webkit-transform: translate(210px, 175px);
-        transform: translate(210px, 175px);
+        -webkit-transform: translate(150px, 110px);
+        transform: translate(150px, 110px);
         position: absolute;
     }
     a:link, a:visited {
@@ -1347,21 +1347,6 @@ path points waves??? M 750 300 Q 700 350 650 300 Q 600 350 550 300 Q 500 350 450
         width: 0;
         height: 0;
     }
-    #hrbadges1 {
-        width: 80%;
-        text-decoration: none;
-        margin-left: -5%;
-    }
-    #hrbadges2 {
-        width: 80%;
-        text-decoration: none;
-        margin-left: 10%;
-    }
-    #hrheading {
-        margin-left: 10%;
-    }
-    #githubc {margin-left: 0%;}
-
     @-webkit-keyframes wobble {
         33% {
             -webkit-transform: translateX(-50px);
@@ -1869,7 +1854,8 @@ go back to normal swimming
         max-width: 80%;
         flex-wrap: wrap;
     }
-    #cortanaBot {
+
+    #cortanaBot{
         margin-top: 35%;
     }
 }
