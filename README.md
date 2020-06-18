@@ -2,9 +2,10 @@
 
 # Personal Portfolio
 
-## [Deployed Project](http://www.ericaingram.com)
 
 ## Project Description
+
+### [Deployed Project](http://www.ericaingram.com)
 
 personal portfolio of Erica L. Ingram
 
