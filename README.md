@@ -2,6 +2,9 @@
 
 # Personal Portfolio
 
+## My Role
+
+This was a solo project.
 
 ## Project Description
 
