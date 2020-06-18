@@ -27,7 +27,7 @@ Front end deployed to `Heroku` and built using:
 - [HTML](https://en.wikipedia.org/wiki/HTML): standard markup language for documents designed to be displayed in a web browser.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS):  a stylesheet language used to describe the presentation of a document written in HTML or XML.
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript):  a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.
-- [Github Contributions Calendar](https://github.com/Bloggify/github-calendar)
+- [Github Contributions Calendar](https://github.com/Bloggify/github-calendar):  gives you the ability to display your GitHub contributions calendar/graph anywhere you like.
 
 ## Testing
 
