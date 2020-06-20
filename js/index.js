@@ -53,23 +53,25 @@ function expandCollapse(id) {
 
 function replaceCloudText(hoverItem) {
 	let caption = document.getElementById('caption');
+	let captionText = '';
 	if (hoverItem === 'sun') {
-		caption.textContent = 'Click me to toggle night.';
+		captionText = 'Click me to toggle night.';
 	} else if (hoverItem === 'moon') {
-		caption.textContent = 'Click me to toggle day.';
+		captionText = 'Click me to toggle day.';
 	} else if (hoverItem === 'trees') {
-		caption.textContent = 'Sitka spruces near the ocean sometimes develop burls.';
+		captionText = 'Sitka spruces near the ocean sometimes develop burls.';
 	} else if (hoverItem === 'crab') {
-		caption.textContent = 'Kalaloch’s 4 & Ruby Beaches have popular tidepools.';
+		captionText = 'Kalaloch’s 4 & Ruby Beaches have popular tidepools.';
 	} else if (hoverItem === 'salmon') {
-		caption.textContent = 'Between 5,000 and 18,000 coho return each year to Elwha.';
+		captionText = 'Between 5,000 and 18,000 coho return each year to Elwha.';
 	} else if (hoverItem === 'rocks') {
-		caption.textContent = 'The oldest rocks date back 50 to 60 million years.';
+		captionText = 'The oldest rocks date back 50 to 60 million years.';
 	} else if (hoverItem === 'sign') {
-		caption.textContent = 'All facts from Wikipedia or official ONP website.';
+		captionText = 'All facts from Wikipedia or official ONP website.';
 	} else {
-		caption.textContent = 'All images, flora, & fauna from Olympic National Park';
+		captionText = 'All images, flora, & fauna from Olympic National Park';
 	}
+	caption.textContent = captionText;
 }
 
 function toggleDayNight() {
