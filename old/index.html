@@ -1,4 +1,5 @@
-p<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,15 +13,36 @@ p<!DOCTYPE html>
     <script src="https://kit.fontawesome.com/6d9eb2af04.js" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
     <link rel="stylesheet"
-        href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
-    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
+        href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
     </script>
+
+    <link rel="canonical" href="https://www.aquoco.co/erica-ingram/index.html" />
     <title>Portfolio of Erica L. Ingram</title>
     <style>
         #projectsctr {
             overflow: visible;
         }
     </style>
+    
+
+    <!--google analytics-->
+    <script>
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        }
+        )
+            (window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-76190959-1', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+
+    </script>
 </head>
 
 <body>
@@ -825,8 +847,11 @@ p<!DOCTYPE html>
                 </div>
                 <div class="beach" id="beach">
                     <div class="topHalf" id="topHalf">
+                        <div class="logWords" id="logWords">
+                            Erica Ingram's portfolio
+                        </div>
                         <div class="sandWords" id="sandWords">
-                            Welcome to Erica Ingram's portfolio. Click and hover to interact.
+                            Click and hover to interact.
                         </div>
                         <div class="woodSign" id="woodSign" onmouseover="replaceCloudText('sign')"
                             onmouseleave="replaceCloudText('default')">
@@ -2189,9 +2214,14 @@ p<!DOCTYPE html>
                             <p class="hiddenMobilePara">&nbsp;</p>
                             <p class="hiddenMobilePara">&nbsp;</p>
                             <p class="hiddenMobilePara">&nbsp;</p>
+                            <p class="hiddenMobilePara">&nbsp;</p>
+                            <p class="hiddenRegularPara">&nbsp;</p><p class="hiddenMobilePara">&nbsp;</p><p class="hiddenMobilePara">&nbsp;</p>
                             <p class="hiddenRegularPara">&nbsp;</p>
                             <p class="hiddenRegularPara">&nbsp;</p>
-                            <p class="hiddenRegularPara">&nbsp;</p><p class="hiddenRegularPara">&nbsp;</p>
+                            <p class="hiddenRegularPara">&nbsp;</p>
+                            <p class="hiddenRegularPara">&nbsp;</p>
+                            <p class="hiddenRegularPara">&nbsp;</p>
+                            <p class="hiddenRegularPara">&nbsp;</p>
                             <p class="hiddenRegularPara">&nbsp;</p>
                             <h1>Resume
                                 <a href="https://www.aquoco.co/Erica_Ingram_Resume.pdf" target="_blank">
@@ -2200,139 +2230,161 @@ p<!DOCTYPE html>
                                 <a href="https://www.linkedin.com/in/aquocotrans/" target="_blank">
                                     <i class="fab fa-linkedin fa-1x"></i>
                                 </a></h1>
-                                <h2>Experience:</h2>
-                                <h3>Team Lead, Lambda School</h3>
-                                <h3>January 2020 to present</h3>
-                                <ul>
-                                    <li>Code review for every student in my team twice a week</li>
-                                    <li>Hosted stand-up meetings with seven students two to three times a week</li>
-                                    <li>Presentations on various resources to facilitate students' growth during stand-ups
-                                    </li>
-                                    <li>Mentored and provided feedback to students on areas of improvement</li>
-                                    <li>Tracked attendance and other student metrics</li>
-                                    <li>Use of Slackbot and Slack Workflow Builder to manage tasks, information, and
-                                        reminders</li>
-                                </ul>
-                                
-                                <h3>Owner/Operator, A Quo Co.</h3>
-                                <h4>May 2009 to present</h4>
-                                <ul>
-                                    <li>Standard business operations such as accounting and project management</li>
-                                    <li>Streamlined consistent business communications and marketing</li>
-                                    <li>General & legal transcription services of digital audio and video formats</li>
-                                    <li>Completely unique features such as authority hyperlinking via CourtListener, .gov
-                                        sites, and the like as well as tables of authority for free with every transcript
-                                        via VBA automation</li>
-                                    <li>Consistently produced twice the number of transcript pages over average due to VBA
-                                        automation</li>
-                                    <li>Used text-analyzing software on over 10,000 transcript pages to produce autocorrect
-                                        entries in Word to improve typing speed and accuracy, then used VBA to automate
-                                        creation of those entries regarding proper names and nouns</li>
-                                </ul>
-                                <div class="overlay-content">
-                            <h2 style="color:#162605;">Skills:</h2>
-                            <h3 style="color:#162605;padding-top: 3%;padding-bottom: 3%;">Front End:</h3>
-                                    <div class="row" style="padding-top: 3%;padding-bottom: 3%;">
-                                        <img src="img/langs-react.png" style="margin: 0 auto;"
-                                            class="icon" title="React" alt="React logo" />
-                                        <img src="img/langs-cypress.png" style="margin: 0 auto;"
-                                            class="icon" title="Cypress" alt="Cypress logo" />
-                                        <img src="img/langs-redux.png"
-                                            style="margin: 0 auto;" class="icon" title="Redux" alt="Redux logo" />
-                                        <img src="img/langs-html.png" style="margin: 0 auto;"
-                                            class="icon" title="HTML" alt="HTML logo" />
-                                        <img src="img/langs-css.png" style="margin: 0 auto;"
-                                            class="icon" title="CSS" alt="CSS logo" />
-                                        <img src="img/langs-javascript.png" style="margin: 0 auto;"
-                                            class="icon" title="JavaScript" alt="JavaScript logo"/>
-                                    </div>
+                            <h2>Experience:</h2>
 
-                                <div class="overlay-content">
-                                    <div class="row" style="padding-top: 3%;padding-bottom: 3%;">
-                                        <img src="img/langs-less.png" style="margin: 0 auto;"
-                                            class="icon" title="LESS" alt="LESS logo"/>
-                                        <img src="img/langs-php.svg" style="margin: 0 auto;"
-                                            class="icon" title="PHP" alt="PHP logo"/>    
-                                        <img src="img/langs-jquery.svg"
-                                            style="margin: 0 auto;" class="icon" title="jQuery" alt="jQuery logo" />
-                                        <img src="img/langs-bootstrap.svg"
-                                            style="margin: 0 auto;" class="icon" title="Bootstrap" alt="Bootstrap logo" />                          
-                                        <img src="img/langs-tailwind.png"
-                                            style="margin: 0 auto;" class="icon" title="Tailwind" alt="Tailwind logo" />                
-                                        <img src="img/langs-java.svg"
-                                            style="margin: 0 auto;" class="icon" title="Java" alt="Java logo" />
-                                    </div>
-                                    <div class="overlay-content">
-                                        <div class="row" style="padding-top: 3%;padding-bottom: 3%;">
-                                        <img src="img/langs-python.png" style="margin: 0 auto;"
-                                            class="icon" title="Python" alt="Python logo"/>
-                                            
-                                            <img src="img/langs-formik.png" style="margin: 0 auto;" class="icon" title="Formik" alt="Formik logo" />
-                                            <img src="img/langs-jest.png" style="margin: 0 auto;" class="icon" title="Jest" alt="Jest logo" />
-                                            <img src="img/langs-gsap.png" style="margin: 0 auto;" class="icon" title="GSAP" alt="GSAP logo" /><img src="img/langs-typescript.jpeg" style="margin: 0 auto;" class="icon" title="TypeScript" alt="TypeScript logo" />
-                                        </div><hr style="color:#162605; fill:#162605;background-color: #162605;height:2px;" />
-                            <h3 style="color:#162605;padding-top: 3%;padding-bottom: 3%;">Back End:</h3>
-
-                                <div class="overlay-content">
-                                    <div class="row" style="padding-top: 3%;">
-                                        <img src="img/langs-node.svg" style="margin: 0 auto;" class="icon" title="Node" alt="Node logo" />
-                                        <i class="fas fa-database fa-2x" title="SQL" alt="SQL"></i>                                        
-                                        <img src="img/langs-MySQL.png" style="margin: 0 auto;"
-                                            class="icon" title="" alt=" logo"/><img src="img/langs-GraphQL.png" style="margin: 0 auto;" class="icon" title="GraphQL" alt="GraphQL logo" />
-                                    </div>
-                                </div>
-
-                                <div class="overlay-content">
-                                    <div class="row" style="padding-top: 3%;">
-                                        <img src="img/langs-knex.png"
-                                            style="margin: 0 auto;" class="icon" title="Knex" alt="Knex logo"/> 
-                                        <img src="img/langs-express.png" style="margin: 0 auto;" class="icon" title="Express" alt="Express logo" />
-                                        <img src="img/langs-postgreSQL.png" style="margin: 0 auto;" class="icon" title="PostgreSQL" alt="PostgreSQL logo" />
-                                        <img src="img/langs-postman1.svg" style="margin: 0 auto;" class="icon" title="Postman" alt="Postman logo" />
-                                    </div>
-                                        <hr style="color:#162605; fill:#162605;background-color: #162605;height:2px;"/>
-                                </div>
-
-                            <h3 style="color:#162605;padding-top: 3%;padding-bottom: 3%;">Other:</h3>
-
-
-                                <div class="overlay-content">
-                                    <div class="row" style="padding-top: 3%;padding-bottom: 3%;">
-                                        <img src="img/langs-VB.png"
-                                            style="margin: 0 auto;" class="icon" title="Visual Basic" alt="Visual Basic logo"/>
-                                            <i class="fab fa-github-square fa-2x" title="Github"></i>
-                                        <img src="img/langs-docker.png"
-                                            style="margin: 0 auto;" class="icon" title="Docker" alt="Docker logo"/>       
-                                        <img src="img/langs-git.png"
-                                            style="margin: 0 auto;" class="icon" title="Git" alt="Git logo" />
-                                        <img src="img/langs-agile.png"
-                                            style="margin: 0 auto;" class="icon" title="Agile" alt="Agile" /><span class="codeItem">Emmet</span></div>
-                                            <div class="overlay-content">
-                                                <div class="row" style="padding-top: 3%;padding-bottom: 3%;">
-                                        <img src="img/langs-powershell.png"
-                                            style="margin: 0 auto;" class="icon" title="Powershell" alt="Powershell logo"/>
-                                        <img src="img/langs-rexx.png"
-                                            style="margin: 0 auto;" class="icon" title="Rexx" alt="Rexx logo"/>       
-                                        <span class="codeItem">COBOL</span>
-                                        <img src="img/langs-jcl.png"
-                                            style="margin: 0 auto;" class="icon" title="JCL" alt="JCL logo"/>    
-                                            <img src="img/langs-cortana.png"
-                                            style="margin: 0 auto;" class="icon" title="Cortana" alt="Cortana logo" /> <img src="img/langs-office.png" style="margin: 0 auto;" class="icon" title="" alt=" logo" title="Microsoft Office"
-                                                alt="Microsoft Office logo" />
-                                        <img src="img/langs-adobexd.png"
-                                            style="margin: 0 auto;" class="icon" title="Adobe XD" alt="Adobe XD logo"/>                       
-                                    </div>
-                                </div>
-
-                                </div>
-                                </div>
-                                        <hr style="color:#162605; fill:#162605;background-color: #162605;height:2px;"/>
-                                </div>
-                                    </div>
+                            <h3>Owner/Operator, A Quo Co.</h3>
+                            <h4>May 2009 to present</h4>
+                            <ul>
+                                <li>Standard business operations such as accounting and project management</li>
+                                <li>Streamlined consistent business communications and marketing</li>
+                                <li>General & legal transcription services of digital audio and video formats</li>
+                                <li>Completely unique features such as authority hyperlinking via CourtListener, .gov
+                                    sites, and the like as well as tables of authority for free with every transcript
+                                    via VBA automation</li>
+                                <li>Consistently produced twice the number of transcript pages over average due to VBA
+                                    automation</li>
+                                <li>Used text-analyzing software on over 10,000 transcript pages to produce autocorrect
+                                    entries in Word to improve typing speed and accuracy, then used VBA to automate
+                                    creation of those entries regarding proper names and nouns</li>
+                            </ul>
                             
+                            <h3>Team Lead, Lambda School</h3>
+                            <h3>January 2020 to June 2020</h3>
+                            <ul>
+                                <li>Code review for every student in my team twice a week</li>
+                                <li>Hosted stand-up meetings with seven students two to three times a week</li>
+                                <li>Presentations on various resources to facilitate students' growth during stand-ups
+                                </li>
+                                <li>Mentored and provided feedback to students on areas of improvement</li>
+                                <li>Tracked attendance and other student metrics</li>
+                                <li>Use of Slackbot and Slack Workflow Builder to manage tasks, information, and
+                                    reminders</li>
+                            </ul>
+                                <h2 style="color:#162605;">Skills:</h2>
+                                <h3 style="color:#162605;padding-top: 3%;padding-bottom: 3%;">Front End:</h3>
+                                <div id="skills-frontend" class="overlay-content">
+                                    <div class="row" style="padding-top: 3%;padding-bottom: 3%;">
+                                    <img src="img/langs-react.png" style="margin: 0 auto;" class="icon" title="React"
+                                        alt="React logo" />
+                                    <img src="img/langs-cypress.png" style="margin: 0 auto;" class="icon"
+                                        title="Cypress" alt="Cypress logo" />
+                                    <img src="img/langs-redux.png" style="margin: 0 auto;" class="icon" title="Redux"
+                                        alt="Redux logo" />
+                                    <img src="img/langs-html.png" style="margin: 0 auto;" class="icon" title="HTML"
+                                        alt="HTML logo" />
+                                    <img src="img/langs-css.png" style="margin: 0 auto;" class="icon" title="CSS"
+                                        alt="CSS logo" />
+                                    <img src="img/langs-javascript.png" style="margin: 0 auto;" class="icon"
+                                        title="JavaScript" alt="JavaScript logo" />
+                                    </div>
+
+                                    <div class="row" style="padding-top: 3%;padding-bottom: 3%;">
+                                        <img src="img/langs-less.png" style="margin: 0 auto;" class="icon" title="LESS"
+                                            alt="LESS logo" />
+                                        <img src="img/langs-php.svg" style="margin: 0 auto;" class="icon" title="PHP"
+                                            alt="PHP logo" />
+                                        <img src="img/langs-jquery.svg" style="margin: 0 auto;" class="icon"
+                                            title="jQuery" alt="jQuery logo" />
+                                        <img src="img/langs-bootstrap.svg" style="margin: 0 auto;" class="icon"
+                                            title="Bootstrap" alt="Bootstrap logo" />
+                                        <img src="img/langs-tailwind.png" style="margin: 0 auto;" class="icon"
+                                            title="Tailwind" alt="Tailwind logo" />
+                                        <img src="img/langs-java.svg" style="margin: 0 auto;" class="icon" title="Java"
+                                            alt="Java logo" />
+                                    </div>
+                                    <div class="row" style="padding-top: 3%;padding-bottom: 3%;">
+                                        <img src="img/langs-python.png" style="margin: 0 auto;" class="icon"
+                                            title="Python" alt="Python logo" />
+
+                                        <img src="img/langs-formik.png" style="margin: 0 auto;" class="icon"
+                                            title="Formik" alt="Formik logo" />
+                                        <img src="img/langs-jest.png" style="margin: 0 auto;" class="icon"
+                                            title="Jest" alt="Jest logo" />
+                                        <img src="img/langs-gsap.png" style="margin: 0 auto;" class="icon"
+                                            title="GSAP" alt="GSAP logo" /><img src="img/langs-typescript.jpeg"
+                                            style="margin: 0 auto;" class="icon" title="TypeScript"
+                                            alt="TypeScript logo" />
+                                    </div>
+                                    <hr style="color:#162605; fill:#162605;background-color: #162605;height:2px;" />
+                                </div>
+                                <hr style="color:#162605; fill:#162605;background-color: #162605;height:2px;" />
+                                
+                                <h3 style="color:#162605;padding-top: 3%;padding-bottom: 3%;">Back End:</h3>
+
+                                <div id="skills-backend" class="overlay-content">
+                                    <div class="row" style="padding-top: 3%;">
+                                        <img src="img/langs-node.svg" style="margin: 0 auto;" class="icon"
+                                            title="Node" alt="Node logo" />
+                                        <i class="fas fa-database fa-2x" title="SQL" alt="SQL"></i>
+                                        <img src="img/langs-MySQL.png" style="margin: 0 auto;" class="icon"
+                                            title="" alt=" logo" /><img src="img/langs-GraphQL.png"
+                                            style="margin: 0 auto;" class="icon" title="GraphQL"
+                                            alt="GraphQL logo" />
+                                    </div>
+
+                                    <div class="row" style="padding-top: 3%;">
+                                        <img src="img/langs-knex.png" style="margin: 0 auto;" class="icon"
+                                            title="Knex" alt="Knex logo" />
+                                        <img src="img/langs-express.png" style="margin: 0 auto;" class="icon"
+                                            title="Express" alt="Express logo" />
+                                        <img src="img/langs-postgreSQL.png" style="margin: 0 auto;" class="icon"
+                                            title="PostgreSQL" alt="PostgreSQL logo" />
+                                        <img src="img/langs-postman1.svg" style="margin: 0 auto;" class="icon"
+                                            title="Postman" alt="Postman logo" />
+                                    </div>
+                                    <hr style="color:#162605; fill:#162605;background-color: #162605;height:2px;" />
+                                </div>
+
+                                <h3 style="color:#162605;padding-top: 3%;padding-bottom: 3%;">Other:</h3>
+
+                                <div id="skills-other" class="overlay-content">
+                                    <div class="row" style="padding-top: 3%;padding-bottom: 3%;">
+                                        <img src="img/langs-VB.png" style="margin: 0 auto;" class="icon"
+                                            title="Visual Basic" alt="Visual Basic logo" />
+                                        <i class="fab fa-github-square fa-2x" title="Github"></i>
+                                        <img src="img/langs-docker.png" style="margin: 0 auto;" class="icon"
+                                            title="Docker" alt="Docker logo" />
+                                        <img src="img/langs-git.png" style="margin: 0 auto;" class="icon"
+                                            title="Git" alt="Git logo" />
+                                        <img src="img/langs-agile.png" style="margin: 0 auto;" class="icon"
+                                            title="Agile" alt="Agile" /><span class="codeItem">Emmet</span>
+                                    </div>
+                                    <div class="row" style="padding-top: 3%;padding-bottom: 3%;">
+                                        <img src="img/langs-powershell.png" style="margin: 0 auto;"
+                                            class="icon" title="Powershell" alt="Powershell logo" />
+                                        <img src="img/langs-rexx.png" style="margin: 0 auto;" class="icon"
+                                            title="Rexx" alt="Rexx logo" />
+                                        <span class="codeItem">COBOL</span>
+                                        <img src="img/langs-jcl.png" style="margin: 0 auto;" class="icon"
+                                            title="JCL" alt="JCL logo" />
+                                        <img src="img/langs-cortana.png" style="margin: 0 auto;"
+                                            class="icon" title="Cortana" alt="Cortana logo" /> <img
+                                            src="img/langs-office.png" style="margin: 0 auto;" class="icon"
+                                            title="" alt=" logo" title="Microsoft Office"
+                                            alt="Microsoft Office logo" />
+                                    </div>
+                                    <div class="row" style="padding-top: 3%;padding-bottom: 3%;">
+                                        <img src="img/langs-adobexd.png" style="margin: 0 auto;"
+                                            class="icon" title="Adobe XD" alt="Adobe XD logo" />
+                                        <img src="img/langs-OOAD.png" style="margin: 0 auto;"
+                                            class="icon" title="Object-Oriented Analysis & Design" alt="Object-Oriented Analysis & Design" />
+                                        <img src="img/langs-DSAlgos.jpg" style="margin: 0 auto;"
+                                            class="icon" title="Data Structures & Algorithms" alt="Data Structures & Algorithms" />
+                                        <img src="img/langs-UML.png" style="margin: 0 auto;"
+                                            class="icon" title="UML, Unified Modeling Language" alt="UML, Unified Modeling Language" />
+                                        <img src="img/langs-scalability.png" style="margin: 0 auto;"
+                                            class="icon" title="Scalability" alt="Scalability" />
+                                    </div>
+
+                                
+                                    <hr
+                                        style="color:#162605; fill:#162605;background-color: #162605;height:2px;" />
+                                </div>
+                            <hr style="color:#162605; fill:#162605;background-color: #162605;height:2px;" />
+
                             <h2>Education:</h2>
                             <h3>Lambda School, full stack web dev</h3>
-                            <h4>October 2019 to present</h4>
+                            <h4>October 2019 to July 2020</h4>
                             <ul>
                                 <li>Nine-month computer science and software engineering academy providing intense
                                     immersive curriculum in web development and computer science-focused topics</li>
@@ -2346,49 +2398,59 @@ p<!DOCTYPE html>
                                 <li>Front End Libraries</li>
                                 <li>Data Visualization</li>
                             </ul>
-                            <h3>Electronic Reporter & Transcriber</h3>
-                            <h4>AAERT certified, October 2009 to present</h4>
-<br>
-<div class="row" style="padding-top: 3%;padding-bottom: 3%; width:100%;">
+                            <br>
+                            <div class="row" style="padding-top: 3%;padding-bottom: 3%; width:75%;margin-left:12%;">
 
-    <a href="https://www.youracclaim.com/badges/f4956178-1924-48d7-ae75-e72ca51c2c2d/public_url" target="_blank">
+                                <a href="https://www.youracclaim.com/badges/f4956178-1924-48d7-ae75-e72ca51c2c2d/public_url"
+                                    target="_blank">
 
-        <img src="img/badge-ibmMTMainframe.png" style="margin: 0 auto; text-decoration: none;"
-            title="Master the Mainframe 2019 - Part 3" alt="Master the Mainframe 2019 - Part 3 badge" />
-    </a>
+                                    <img src="img/badge-ibmMTMainframe.png"
+                                        style="margin: 0 auto; text-decoration: none;"
+                                        title="Master the Mainframe 2019 - Part 3"
+                                        alt="Master the Mainframe 2019 - Part 3 badge" />
+                                </a>
 
-    <a href="https://www.youracclaim.com/badges/c1b569d5-d862-4b55-9387-936b7cbb9773/public_url" target="_blank">
+                                <a href="https://www.youracclaim.com/badges/c1b569d5-d862-4b55-9387-936b7cbb9773/public_url"
+                                    target="_blank">
 
-        <img src="img/badge-ibmZOSDeveloper.png" style="margin: 0 auto;" title="IBM Developer for z/OS Basics"
-            alt="IBM Developer for z/OS Basics badge" />
-    </a>
+                                    <img src="img/badge-ibmZOSDeveloper.png" style="margin: 0 auto;"
+                                        title="IBM Developer for z/OS Basics"
+                                        alt="IBM Developer for z/OS Basics badge" />
+                                </a>
 
-    <a href="https://www.youracclaim.com/badges/d5c014bd-bb06-4238-9141-ae7c18f7f498/public_url" target="_blank">
-        <img src="img/badge-ZOSTCPIP.png" style="margin: 0 auto;" title="z/OS TCP/IP Configuration with NCA"
-            alt="z/OS TCP/IP Configuration with NCA badge" />
-    </a>
-</div>
-<div class="row" style="padding-top: 3%;padding-bottom: 3%; width:100%;">
+                                <a href="https://www.youracclaim.com/badges/d5c014bd-bb06-4238-9141-ae7c18f7f498/public_url"
+                                    target="_blank">
+                                    <img src="img/badge-ZOSTCPIP.png" style="margin: 0 auto;"
+                                        title="z/OS TCP/IP Configuration with NCA"
+                                        alt="z/OS TCP/IP Configuration with NCA badge" />
+                                </a>
+                            </div>
+                            <div class="row" style="padding-top: 3%;padding-bottom: 3%; width:75%;margin-left:12%;">
 
-    <a href="https://www.youracclaim.com/badges/6e7740dd-ee50-43fe-b1af-124a8f4f872b/public_url" target="_blank">
+                                <a href="https://www.youracclaim.com/badges/6e7740dd-ee50-43fe-b1af-124a8f4f872b/public_url"
+                                    target="_blank">
 
-        <img src="img/badge-ibmZOSNetworkingFoundations.png" style="margin: 0 auto;"
-            title="Networking on z/OS - Foundations" alt="Networking on z/OS - Foundations badge" />
-    </a>
-    <a href="https://www.youracclaim.com/badges/6e7740dd-ee50-43fe-b1af-124a8f4f872b/public_url" target="_blank">
+                                    <img src="img/badge-ibmZOSNetworkingFoundations.png" style="margin: 0 auto;"
+                                        title="Networking on z/OS - Foundations"
+                                        alt="Networking on z/OS - Foundations badge" />
+                                </a>
+                                <a href="https://www.youracclaim.com/badges/6e7740dd-ee50-43fe-b1af-124a8f4f872b/public_url"
+                                    target="_blank">
 
-        <img src="img/badge-ibmIntroMainframe.png" style="margin: 0 auto;" title="Introduction to IBM z/OS Mainframe"
-            alt="Introduction to IBM z/OS Mainframe badge" />
-    </a>
+                                    <img src="img/badge-ibmIntroMainframe.png" style="margin: 0 auto;"
+                                        title="Introduction to IBM z/OS Mainframe"
+                                        alt="Introduction to IBM z/OS Mainframe badge" />
+                                </a>
 
-    <a href="https://www.youracclaim.com/badges/6e7740dd-ee50-43fe-b1af-124a8f4f872b/public_url" target="_blank">
+                                <a href="https://www.youracclaim.com/badges/6e7740dd-ee50-43fe-b1af-124a8f4f872b/public_url"
+                                    target="_blank">
 
-        <img src="img/badge-OfficeMaster2016.png" style="margin: 0 auto;" title="Microsoft Office Master 2016"
-            alt="Microsoft Office Master 2016 badge" />
-    </a>
+                                    <img src="img/badge-OfficeMaster2016.png" style="margin: 0 auto;"
+                                        title="Microsoft Office Master 2016" alt="Microsoft Office Master 2016 badge" />
+                                </a>
 
-</div>
-<hr style="color:#162605; fill:#162605;height:1px;border:0;">
+                            </div>
+                            <hr style="color:#162605; fill:#162605;height:1px;border:0;">
                             <h2>MOOCs:</h2>
                             <h3>Frontend Masters, full stack web dev</h3>
                             <h4>October 2019 to present</h4>
@@ -2422,6 +2484,9 @@ p<!DOCTYPE html>
                                 </li>
                                 <li>
                                     <i><a href="https://frontendmasters.com/learn/css/">CSS Learning Path</a></i>
+                                </li>
+                                <li>
+                                    <i><a href="https://frontendmasters.com/learn/computer-science/">Computer Science Learning Path</a></i>
                                 </li>
                             </ul>
                             <h3>Wes Bos, JavaScript 30, December 2019</h3>
@@ -2498,6 +2563,16 @@ p<!DOCTYPE html>
                             <p class="hiddenMobilePara">&nbsp;</p>
                             <p class="hiddenMobilePara">&nbsp;</p>
                             <p class="hiddenRegularPara">&nbsp;</p>
+                            <p class="hiddenMobilePara">&nbsp;</p>
+                            <p class="hiddenRegularPara">&nbsp;</p>
+                            <p class="hiddenMobilePara">&nbsp;</p>
+                            <p class="hiddenRegularPara">&nbsp;</p>
+                            <p class="hiddenMobilePara">&nbsp;</p>
+                            <p class="hiddenRegularPara">&nbsp;</p>
+                            <p class="hiddenMobilePara">&nbsp;</p>
+                            <p class="hiddenRegularPara">&nbsp;</p>
+                            <p class="hiddenMobilePara">&nbsp;</p>
+                            <p class="hiddenRegularPara">&nbsp;</p>
 
 
                             <p class="hiddenRegularPara">&nbsp;</p>
@@ -2567,7 +2642,7 @@ p<!DOCTYPE html>
                                     <div class="flex-item">
                                         <div id="swaap" class="clickable-container">
                                             <div class="single-news"><img src="img/projectpicture-swaap.png"></div>
-                                            <div class="overlay">
+                                            <div class="overlay" style="padding-top: 5%; padding-bottom: 5%;"> 
                                                 <div class="overlay-content">
                                                     <div class="row">
                                                         <img src="img/langs-react.png" style="margin: 0 auto;"
@@ -2582,11 +2657,12 @@ p<!DOCTYPE html>
                                                 <h2 class="responsive-title">Swaap</h2>
                                                 <div class="responsive-title">
                                                     <ul>
-                                                        <li>Contact trading app built remotely with seven-member cross-functional team</li>
+                                                        <li>Contact trading app built remotely with continous delivery by a seven-member
+                                                            cross-functional team</li>
                                                         <li>Tested all parts of landing page</li>
-                                                            <li>Made styling changes with Tailwind CSS</li>
-                                                            <li>Added contacts search feature</li>
-                                                            <li>Assisted in planning phase and creation of Product Vision Document</li>
+                                                        <li>Made styling changes with Tailwind CSS</li>
+                                                        <li>Developed contacts search feature</li>
+                                                        <li>Assisted in planning phase, creation of Product Vision, & project mgmt via Trello</li>
                                                     </ul>
                                                 </div>
                                                 <div class="responsive-date"><span class="center-text">
@@ -2594,9 +2670,9 @@ p<!DOCTYPE html>
                                                             target="_blank">
                                                             <i class="fas fa-laptop-code fa-2x"></i></a>
                                                         <a class="link-color"
-                                                            href="https://github.com/Lambda-School-Labs/conference-contacts-fe/"
+                                                            href="https://github.com/evoingram/conference-contacts-fe/"
                                                             target="_blank"><i
-                                                                class="fab fa-github-square fa-2x"></i></a>
+                                                                class="fab fa-github-square fa-2x"></i></a><a href="https://codeclimate.com/github/evoingram/conference-contacts-fe/maintainability"><img src="https://api.codeclimate.com/v1/badges/d9da9114cd8e59bc6487/maintainability" style="width: 50%;"/></a>
                                                     </span></div>
                                             </div>
                                         </div>
@@ -2626,9 +2702,12 @@ p<!DOCTYPE html>
                                                 </a>
                                                 <div class="responsive-title">
                                                     <ul>
-                                                        <li>Live solo project ranking 90th percentile in Google PageSpeed Insights and first-page results for "seattle transcription" in
+                                                        <li>Live solo project ranking 90th percentile in Google
+                                                            PageSpeed Insights and first-page results for "seattle
+                                                            transcription" in
                                                             Google</li>
-                                                            <li>Ranks 100 for accessibility, best practices, & SEO, 96 in performance in Lighthouse </li>
+                                                        <li>Ranks 100 for accessibility, best practices, & SEO, 96 in
+                                                            performance in Lighthouse </li>
                                                     </ul>
                                                 </div>
                                                 <div class="responsive-date"><span class="center-text">
@@ -2638,7 +2717,7 @@ p<!DOCTYPE html>
                                                         <a class="link-color"
                                                             href="https://github.com/evoingram/newAQCWebsite"
                                                             target="_blank"><i
-                                                                class="fab fa-github-square fa-2x"></i></a>
+                                                                class="fab fa-github-square fa-2x"></i></a><a href="https://codeclimate.com/github/evoingram/newAQCWebsite/maintainability"><img src="https://api.codeclimate.com/v1/badges/043ebab30e06dbf85ed7/maintainability" style="width: 50%"/></a>
                                                     </span></div>
                                             </div>
                                         </div>
@@ -2673,7 +2752,8 @@ p<!DOCTYPE html>
                                                 <h2 class="responsive-title">Transcript Management</h2>
                                                 <div class="responsive-title">
                                                     <ul>
-                                                        <li>Live solo project, RESTful API with auth services for transcript
+                                                        <li>Live solo project, RESTful API with auth services for
+                                                            transcript
                                                             production system</li>
                                                         <li>126 endpoints, including CourtListener, Xero, PayPal, &
                                                             Office
@@ -2689,6 +2769,8 @@ p<!DOCTYPE html>
                                                             href="https://github.com/evoingram/webapp-backend"
                                                             target="_blank"><i
                                                                 class="fab fa-github-square fa-2x"></i></a>
+                                                                <a href="https://codeclimate.com/github/evoingram/webapp-backend/maintainability"><img
+                                                                        src="https://api.codeclimate.com/v1/badges/c1474fe518ccb398d184/maintainability" style="width: 50%;"/></a>
                                                     </span></div>
                                             </div>
                                         </div>
@@ -2726,8 +2808,88 @@ p<!DOCTYPE html>
                                                         <a class="link-color"
                                                             href="https://github.com/evoingram/nasaSearch"
                                                             target="_blank"><i
-                                                                class="fab fa-github-square fa-2x"></i></a>
+                                                                class="fab fa-github-square fa-2x"></i></a><a href="https://codeclimate.com/github/evoingram/nasaSearch/maintainability"><img src="https://api.codeclimate.com/v1/badges/b21fbbb38f5918d60ada/maintainability" style="width:50%;"/></a>
                                                     </span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-pair">
+                                    <div class="flex-item">
+                                        <div id="cgol" class="clickable-container">
+                                            <div class="single-news"><img src="img/projectpicture-cgol.png"></div>
+                                            <div class="overlay"
+                                                style="padding: 5%;margin:3%;">
+                                                <div class="overlay-content">
+                                                    <div class="row">
+                                                        <img src="img/langs-react.png" style="margin: 0 auto;"
+                                                            class="icon" />
+                                                        <img src="img/langs-javascript.png" style="margin: 0 auto;"
+                                                            class="icon" />
+                                                        <img src="img/langs-css.png" style="margin: 0 auto;"
+                                                            class="icon" />
+                                                    </div>
+
+                                                </div>
+                                                <h2 class="responsive-title"style="font-size: 1.8rem">Conway's Game of Life</h2>
+                                                <div class="responsive-title">
+                                                    <ul>
+                                                        <li>Live solo project</li>
+                                                        <li>Capstone for computer science, unit 1</li>
+                                                        <li>Includes day-by-day project blog and some history and explanation of Conway's Game of Life</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="responsive-date"><span class="center-text">
+                                                    <a class="link-color" href="https://cs-bw.now.sh/"
+                                                            target="_blank">
+                                                            <i class="fas fa-laptop-code fa-2x"></i></a>
+                                                        <a class="link-color"
+                                                            href="https://github.com/evoingram/cs-bw"
+                                                            target="_blank"><i
+                                                                class="fab fa-github-square fa-2x"></i></a><a href="https://codeclimate.com/github/evoingram/cs-bw/maintainability"><img src="https://api.codeclimate.com/v1/badges/7f43b7af335091b3e81b/maintainability" style="width:50%;"/></a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-item">
+                                        <div id="cortanaBot" class="clickable-container">
+                                            <div class="single-news"><img src="img/projectpicture-aQuack.png"></div>
+                                            <div class="overlay" style="padding: 3%;">
+                                                <div class="overlay-content"><img src="img/langs-node.svg" style="margin: 0 auto;" class="icon">
+                                                </div>
+                                                <h2 class="responsive-title">aQuack</h2>
+                                                <div class="responsive-title">
+                                                    <ul>
+                                                        <li>Live solo project</li>
+                                                        <li>Web version of a Node.js Cortana bot</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="responsive-date"><span class="center-text">
+                                                        <a class="link-color" href="https://www.aquoco.co/testBot.html" target="_blank">
+                                                            <i class="fas fa-laptop-code fa-2x"></i></a>
+                                                        <a class="link-color" href="https://github.com/evoingram/cortanaBot" target="_blank"><i
+                                                                class="fab fa-github-square fa-2x"></i></a><a href="https://codeclimate.com/github/evoingram/cortanaBot/maintainability"><img src="https://api.codeclimate.com/v1/badges/64a21b3917698f04666e/maintainability" style="width:50%;"/></a>
+                                                    </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="overlay">
+                                            <div class="overlay-content">
+                                                <img src="img/langs-node.svg" style="margin: 0 auto;" class="icon">
+                                            </div>
+                                            <h2 class="responsive-title">aQuack</h2>
+                                            <div class="responsive-title">
+                                                <ul>
+                                                    <li>Live solo project</li>
+                                                    <li>Web version of a Node.js Cortana bot</li>
+                                                </ul>
+                                            </div>
+                                            <div class="responsive-date"><span class="center-text">
+                                                    <a class="link-color" href="https://www.aquoco.co/testBot.html" target="_blank">
+                                                        <i class="fas fa-laptop-code fa-2x"></i></a>
+                                                    <a class="link-color" href="https://github.com/evoingram/cortanaBot" target="_blank"><i
+                                                            class="fab fa-github-square fa-2x"></i></a><a href="https://codeclimate.com/github/evoingram/cortanaBot/maintainability"><img src="https://api.codeclimate.com/v1/badges/64a21b3917698f04666e/maintainability" style="width:50%;"/></a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -2737,7 +2899,7 @@ p<!DOCTYPE html>
                                         <div id="oldDB" class="clickable-container">
                                             <div class="single-news"><img src="img/projectpicture-oldDB.png"></div>
                                             <div class="overlay"
-                                                style="padding: 12%; padding-top: 24%; padding-bottom: 24%;">
+                                                style="padding: 18%; padding-top: 30%; padding-bottom: 30%;">
                                                 <div class="overlay-content">
                                                     <div class="row">
                                                         <img src="img/langs-VB.png" style="margin: 0 auto;"
@@ -2757,7 +2919,7 @@ p<!DOCTYPE html>
                                                     </div>
 
                                                 </div>
-                                                <h2 class="responsive-title">Transcript Management</h2>
+                                                <h2 class="responsive-title" style="font-size: 1.5rem;">Transcript Management</h2>
                                                 <div class="responsive-title">
                                                     <ul>
                                                         <li>Offline live solo project</li>
@@ -2766,130 +2928,85 @@ p<!DOCTYPE html>
                                                         <li>Saved an average of 15 to 20 hrs/week</li>
                                                         <li>Automates many aspects of transcript production</li>
                                                         <li>Integrated with many third-party libraries & APIs</li>
-                                                        <li>Full description of capabilities @ GitHub</li>
+                                                        <li>Full list of capabilities @ GitHub</li>
                                                     </ul>
                                                 </div>
                                                 <div class="responsive-date"><span class="center-text">
                                                         <a class="link-color"
                                                             href="https://github.com/evoingram/vbDatabase"
                                                             target="_blank"><i
-                                                                class="fab fa-github-square fa-2x"></i></a>
+                                                                class="fab fa-github-square fa-2x"></i></a><a href="https://codeclimate.com/github/evoingram/vbDatabase/maintainability"><img src="https://api.codeclimate.com/v1/badges/06260d9e8729d5d17f2a/maintainability" style="width:50%;" /></a>
                                                     </span></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex-item">
-                                        <div id="cortanaBot" class="clickable-container">
-                    <div class="single-news"><img src="img/projectpicture-aQuack.png"></div>
-                    <div class="overlay">
-                        <div class="overlay-content"><img src="img/langs-node.svg" style="margin: 0 auto;" class="icon">
-                        </div>
-                        <h2 class="responsive-title">aQuack</h2>
-                        <div class="responsive-title">
-                            <ul>
-                                <li>Live solo project</li>
-                                <li>Web version of a Node.js Cortana bot</li>
-                            </ul>
-                        </div>
-                        <div class="responsive-date"><span class="center-text">
-                                <a class="link-color" href="https://www.aquoco.co/testBot.html" target="_blank">
-                                    <i class="fas fa-laptop-code fa-2x"></i></a>
-                                <a class="link-color" href="https://github.com/evoingram/cortanaBot" target="_blank"><i
-                                        class="fab fa-github-square fa-2x"></i></a>
-                            </span></div>
-                    </div>
-                </div>
-                                            <div class="overlay">
-                                                <div class="overlay-content">
-                                                    <img src="img/langs-node.svg" style="margin: 0 auto;" class="icon">
-                                                </div>
-                                                <h2 class="responsive-title">aQuack</h2>
-                                                <div class="responsive-title">
-                                                    <ul>
-                                                        <li>Live solo project</li>
-                                                        <li>Web version of a Node.js Cortana bot</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="responsive-date"><span class="center-text">
-                                                        <a class="link-color" href="https://www.aquoco.co/testBot.html"
-                                                            target="_blank">
-                                                            <i class="fas fa-laptop-code fa-2x"></i></a>
-                                                        <a class="link-color"
-                                                            href="https://github.com/evoingram/cortanaBot"
-                                                            target="_blank"><i
-                                                                class="fab fa-github-square fa-2x"></i></a>
-                                                    </span></div>
-                                            </div>
-                                    </div>
-                                    </div>
-
                                 </div>
-                            </div>
-                        <a class="closepopup" href="#">X</a>
-                        </div>
-                    </div>
 
-                </div>
-                <div id="about" class="popup">
-                    <div class="popup-inner">
-                        <div class="popupphoto">
-                            <img src="img/river-landscape4.jpg" alt="">
+                            </div>
                         </div>
-                        <div class="popuptext">
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <h1>About Me</h1>
-                            <p>As a solo entrepreneur, I needed a website and VB software to process work product, but
-                                didn’t have capital to hire a developer, so I learned to code instead. A few macros to
-                                solve a given problem here and there turned into a complete software package. There’s a
-                                lot of details to attend to because you’re every department, and it can be easy to miss
-                                things, so having software you can rely upon to solve your pain points and make your
-                                workflow efficient and complete from end to end is crucial, which I leaned into when
-                                creating my company’s software. I enjoyed creating this so much, I decided to attend
-                                Lambda, and here we are.</p>
-                            <p>The software gave me back 15 hours of my life per week,
-                                and since I implemented it by far my most frequent customer compliment is how thorough I
-                                am. I’m very excited to bring my resourcefulness and problem-solving skills to my next
-                                venture. </p>
-                            <div class="icons" style="margin-left:25%;margin-bottom: 15%;">
-                                <div class="icon">
-                                    <span width="100%" style="text-decoration: none;">
+                        <a class="closepopup" href="#">X</a>
+                    </div>
+                </div>
+
+            </div>
+            <div id="about" class="popup">
+                <div class="popup-inner">
+                    <div class="popupphoto">
+                        <img src="img/river-landscape4.jpg" alt="">
+                    </div>
+                    <div class="popuptext">
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <h1>About Me</h1>
+                        <p>As a solo entrepreneur, I needed a website and VB software to process work product, but
+                            didn’t have capital to hire a developer, so I learned to code instead. A few macros to
+                            solve a given problem here and there turned into developing a complete software package. There’s a
+                            lot of details to attend to because you’re every department, and it can be easy to miss
+                            things, so having software you can rely upon to solve your pain points and make your
+                            workflow efficient and complete from end to end is crucial, which I leaned into when
+                            creating my company’s software. The software gave me back 15 hours of my life per week,
+                            and since I implemented it by far my most frequent customer compliment is how thorough I
+                            am.</p>
+                        <p>I enjoyed creating this software so much, I decided to attend
+                            Lambda, and here we are.  I’m very excited to bring my resourcefulness and problem-solving skills to my next venture.  Contact me to help you create amazing software solutions!</p>
+                        <div class="icons" style="margin-left:25%;margin-bottom: 15%;">
+                            <div class="icon">
+                                <span width="100%" style="text-decoration: none;">
                                     <h2><a href="mailto:evoingram@aquoco.onmicrosoft.com" title="Email me!">Email me!
                                             <i class="far fa-paper-plane fa-6x"></i>
                                         </a></h2>
-                                    </span>
-                                </div> 
-                                <div class="icon" style="margin-left: 25%;margin-bottom: 15%;">
-                                    <span width="100%" style="text-decoration: none;">
+                                </span>
+                            </div>
+                            <div class="icon" style="margin-left: 25%;margin-bottom: 15%;">
+                                <span width="100%" style="text-decoration: none;">
                                     <h2><a href="tel:1-425-610-7447" title="Call me!">Call me!
-                                            <i class="fas fa-phone-alt fa-5x"style="margin-top: 18%;"></i>
-                                        </a></h2>   
-                                    </span>
-                                </div> 
-                            </div> 
-                            <div id="githubc" class="icons" style="margin-left:10%;margin-right:10%;width: 80%;">
-                                <a href="https://www.github.com/evoingram" target="_blank"
-                                    style="text-decoration: none;">
-                                    <h2> Github Contributions Graph: </h2><br />
-                                    <div class="calendar" style="width: 100%;">
-                                        <!-- Loading stuff -->
-                                        Loading the data just for you.
-                                    </div>
-                                </a></div><br /><br />
+                                            <i class="fas fa-phone-alt fa-5x" style="margin-top: 18%;"></i>
+                                        </a></h2>
+                                </span>
+                            </div>
                         </div>
-                        <a id="exitX" class="closepopup" href="#">X</a>
+                        <div id="githubc" class="icons" style="margin-left:10%;margin-right:10%;width: 80%;">
+                            <a href="https://www.github.com/evoingram" target="_blank" style="text-decoration: none;">
+                                <h2> Github Contributions Graph: </h2><br />
+                                <div id=calendar class="calendar" style="width: 100%;">
+                                    <!-- Loading stuff -->
+                                    Loading the data just for you.
+                                </div>
+                            </a></div><br /><br />
                     </div>
-
+                    <a id="exitX" class="closepopup" href="#">X</a>
                 </div>
+
             </div>
         </div>
+    </div>
 
     </div>
     <div id="browserSupport" class="browserSupport">
@@ -2900,5 +3017,5 @@ p<!DOCTYPE html>
 
 </html>
 <script>
-    new GitHubCalendar(".calendar", "evoingram", { responsive: true, global_stats: false });
+    new GitHubCalendar("#calendar", "evoingram", { responsive: true, global_stats: true });
 </script>
