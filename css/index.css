@@ -833,14 +833,14 @@ rect {
 }
 
 .crab {
-	width: 17%;
-	z-index: 98999;
+	width: 125%;
+	z-index: 99999;
 	-webkit-box-align: center;
 	align-items: center;
 	position: absolute;
 	-webkit-transform: translate(175px, 50px);
 	transform: translate(175px, 50px);
-	bottom: 155px;
+	bottom: -125px;
 	margin: 0;
 	padding: 0;
 	background-color: transparent;
