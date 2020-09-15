@@ -25,7 +25,7 @@ personal portfolio of Erica L. Ingram
 
 ## Tech Stack
 
-Front end deployed to `Heroku` and built using:
+Front end deployed to `a personal website` and built using:
 
 - [HTML](https://en.wikipedia.org/wiki/HTML): standard markup language for documents designed to be displayed in a web browser.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS):  a stylesheet language used to describe the presentation of a document written in HTML or XML.
